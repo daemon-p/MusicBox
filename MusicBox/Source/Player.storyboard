@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14460.31" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="NHl-lH-kKV">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14460.20"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--Assistant View Controller-->
+        <scene sceneID="kOl-uj-4MY">
+            <objects>
+                <viewController storyboardIdentifier="AssistantViewController" id="NHl-lH-kKV" customClass="AssistantViewController" customModule="MusicBox" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="kmw-zv-1Dn" customClass="UIControl">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="assistant" translatesAutoresizingMaskIntoConstraints="NO" id="wqX-Bj-Xgj">
+                                <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                                <gestureRecognizers/>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
+                                        <integer key="value" value="24"/>
+                                    </userDefinedRuntimeAttribute>
+                                </userDefinedRuntimeAttributes>
+                            </imageView>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <gestureRecognizers/>
+                        <constraints>
+                            <constraint firstItem="wqX-Bj-Xgj" firstAttribute="top" secondItem="kmw-zv-1Dn" secondAttribute="top" id="KaP-5A-ihH"/>
+                            <constraint firstAttribute="trailing" secondItem="wqX-Bj-Xgj" secondAttribute="trailing" id="UVz-od-BEh"/>
+                            <constraint firstItem="wqX-Bj-Xgj" firstAttribute="leading" secondItem="7Ne-Pg-wBj" secondAttribute="leading" id="cNP-QT-w9R"/>
+                            <constraint firstItem="7Ne-Pg-wBj" firstAttribute="bottom" secondItem="wqX-Bj-Xgj" secondAttribute="bottom" id="erE-Ye-tP3"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="7Ne-Pg-wBj"/>
+                        <userDefinedRuntimeAttributes>
+                            <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
+                                <integer key="value" value="24"/>
+                            </userDefinedRuntimeAttribute>
+                            <userDefinedRuntimeAttribute type="color" keyPath="shadowColor">
+                                <color key="value" red="1" green="0.4411621094" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                            </userDefinedRuntimeAttribute>
+                            <userDefinedRuntimeAttribute type="number" keyPath="layer.shadowRadius">
+                                <integer key="value" value="5"/>
+                            </userDefinedRuntimeAttribute>
+                            <userDefinedRuntimeAttribute type="number" keyPath="layer.shadowOpacity">
+                                <real key="value" value="0.5"/>
+                            </userDefinedRuntimeAttribute>
+                            <userDefinedRuntimeAttribute type="point" keyPath="layer.shadowOffset">
+                                <point key="value" x="0.0" y="0.0"/>
+                            </userDefinedRuntimeAttribute>
+                        </userDefinedRuntimeAttributes>
+                        <connections>
+                            <action selector="tap:" destination="NHl-lH-kKV" eventType="touchUpInside" id="7yP-jD-is1"/>
+                            <outletCollection property="gestureRecognizers" destination="f1v-7t-19Q" appends="YES" id="kV8-P1-YaJ"/>
+                        </connections>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="zAa-fv-35Q" userLabel="First Responder" sceneMemberID="firstResponder"/>
+                <panGestureRecognizer minimumNumberOfTouches="1" id="f1v-7t-19Q">
+                    <connections>
+                        <action selector="pan:" destination="NHl-lH-kKV" id="cJO-VR-s5g"/>
+                    </connections>
+                </panGestureRecognizer>
+            </objects>
+            <point key="canvasLocation" x="1053.5999999999999" y="20.239880059970016"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="assistant" width="60" height="60"/>
+    </resources>
+</document>
