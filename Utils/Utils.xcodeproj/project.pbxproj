@@ -83,11 +83,11 @@
 		913BEA0E21B6B552005FF1BB = {
 			isa = PBXGroup;
 			children = (
-				913BEB4C21B6BFB7005FF1BB /* Standard */,
-				913BEAE821B6BEB1005FF1BB /* MBUIKit */,
 				913BEB0F21B6BF3B005FF1BB /* MBFoundation */,
-				913BEB3C21B6BF83005FF1BB /* StandardTests */,
+				913BEAE821B6BEB1005FF1BB /* MBUIKit */,
 				913BEA1921B6B552005FF1BB /* Products */,
+				913BEB4C21B6BFB7005FF1BB /* Standard */,
+				913BEB3C21B6BF83005FF1BB /* StandardTests */,
 			);
 			sourceTree = "<group>";
 		};
@@ -113,8 +113,8 @@
 		913BEA6E21B6B960005FF1BB /* InterfaceBuilding */ = {
 			isa = PBXGroup;
 			children = (
-				913BEA6621B6B6F4005FF1BB /* UIView+InterfaceBuilding.swift */,
 				913BEA7121B6B9CF005FF1BB /* StoryboardLoadable.swift */,
+				913BEA6621B6B6F4005FF1BB /* UIView+InterfaceBuilding.swift */,
 			);
 			path = InterfaceBuilding;
 			sourceTree = "<group>";
@@ -149,8 +149,8 @@
 		913BEB2521B6BF59005FF1BB /* Supporting Files */ = {
 			isa = PBXGroup;
 			children = (
-				913BEB2621B6BF59005FF1BB /* MBFoundation.h */,
 				913BEB2721B6BF59005FF1BB /* Info.plist */,
+				913BEB2621B6BF59005FF1BB /* MBFoundation.h */,
 			);
 			path = "Supporting Files";
 			sourceTree = "<group>";
@@ -158,8 +158,8 @@
 		913BEB3C21B6BF83005FF1BB /* StandardTests */ = {
 			isa = PBXGroup;
 			children = (
-				913BEB3D21B6BF83005FF1BB /* StandardTests.swift */,
 				913BEB3F21B6BF83005FF1BB /* Info.plist */,
+				913BEB3D21B6BF83005FF1BB /* StandardTests.swift */,
 			);
 			path = StandardTests;
 			sourceTree = "<group>";
@@ -176,8 +176,8 @@
 		913BEB4D21B6BFB7005FF1BB /* Supporting Files */ = {
 			isa = PBXGroup;
 			children = (
-				913BEB4E21B6BFB7005FF1BB /* Standard.h */,
 				913BEB4F21B6BFB7005FF1BB /* Info.plist */,
+				913BEB4E21B6BFB7005FF1BB /* Standard.h */,
 			);
 			path = "Supporting Files";
 			sourceTree = "<group>";

@@ -46,10 +46,10 @@
 		913BEA3B21B6B62A005FF1BB = {
 			isa = PBXGroup;
 			children = (
-				913BEA5F21B6B662005FF1BB /* Supporting Files */,
-				913BEA4721B6B62A005FF1BB /* Source */,
-				913BEA4621B6B62A005FF1BB /* Products */,
 				913BEB5A21B6C876005FF1BB /* Frameworks */,
+				913BEA4621B6B62A005FF1BB /* Products */,
+				913BEA4721B6B62A005FF1BB /* Source */,
+				913BEA5F21B6B662005FF1BB /* Supporting Files */,
 			);
 			sourceTree = "<group>";
 		};
@@ -64,11 +64,11 @@
 		913BEA4721B6B62A005FF1BB /* Source */ = {
 			isa = PBXGroup;
 			children = (
-				913BEA6421B6B6E6005FF1BB /* AssistantViewController.swift */,
 				911C240921B6D16F00F96CA4 /* Assistant.swift */,
+				913BEA6421B6B6E6005FF1BB /* AssistantViewController.swift */,
 				913BEA6821B6B6FB005FF1BB /* AudioPlayer.swift */,
-				911C240721B6CEDC00F96CA4 /* Shared.xcassets */,
 				913BEA6C21B6B75B005FF1BB /* Player.storyboard */,
+				911C240721B6CEDC00F96CA4 /* Shared.xcassets */,
 			);
 			path = Source;
 			sourceTree = "<group>";

@@ -112,14 +112,14 @@
 		911C23B121B6CC4E00F96CA4 = {
 			isa = PBXGroup;
 			children = (
-				911C240221B6CD8D00F96CA4 /* Standard.framework */,
-				911C23FF21B6CD8D00F96CA4 /* MBFoundation.framework */,
-				911C23FC21B6CD8D00F96CA4 /* MBUIKit.framework */,
-				911C23F921B6CD8D00F96CA4 /* MusicBox.framework */,
 				911C23BC21B6CC4E00F96CA4 /* Host */,
 				911C23D121B6CC5000F96CA4 /* HostTests */,
 				911C23DC21B6CC5000F96CA4 /* HostUITests */,
 				911C23BB21B6CC4E00F96CA4 /* Products */,
+				911C23FF21B6CD8D00F96CA4 /* MBFoundation.framework */,
+				911C23FC21B6CD8D00F96CA4 /* MBUIKit.framework */,
+				911C23F921B6CD8D00F96CA4 /* MusicBox.framework */,
+				911C240221B6CD8D00F96CA4 /* Standard.framework */,
 			);
 			sourceTree = "<group>";
 		};
@@ -136,13 +136,13 @@
 		911C23BC21B6CC4E00F96CA4 /* Host */ = {
 			isa = PBXGroup;
 			children = (
-				911C23F721B6CCC400F96CA4 /* Toca Toca.mp3 */,
 				911C23BD21B6CC4E00F96CA4 /* AppDelegate.swift */,
-				911C23BF21B6CC4E00F96CA4 /* ViewController.swift */,
-				911C23F821B6CCF500F96CA4 /* Main.xcassets */,
-				911C23C121B6CC4E00F96CA4 /* Main.storyboard */,
-				911C23C621B6CC5000F96CA4 /* LaunchScreen.storyboard */,
 				911C23C921B6CC5000F96CA4 /* Info.plist */,
+				911C23C621B6CC5000F96CA4 /* LaunchScreen.storyboard */,
+				911C23C121B6CC4E00F96CA4 /* Main.storyboard */,
+				911C23F821B6CCF500F96CA4 /* Main.xcassets */,
+				911C23F721B6CCC400F96CA4 /* Toca Toca.mp3 */,
+				911C23BF21B6CC4E00F96CA4 /* ViewController.swift */,
 			);
 			path = Host;
 			sourceTree = "<group>";
@@ -341,6 +341,7 @@
 				911C23C221B6CC4E00F96CA4 /* Base */,
 			);
 			name = Main.storyboard;
+			path = .;
 			sourceTree = "<group>";
 		};
 		911C23C621B6CC5000F96CA4 /* LaunchScreen.storyboard */ = {
@@ -349,6 +350,7 @@
 				911C23C721B6CC5000F96CA4 /* Base */,
 			);
 			name = LaunchScreen.storyboard;
+			path = .;
 			sourceTree = "<group>";
 		};
 /* End PBXVariantGroup section */
