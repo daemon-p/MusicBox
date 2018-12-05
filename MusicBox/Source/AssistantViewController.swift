@@ -195,9 +195,9 @@ extension AssistantViewController {
     }
 }
 
-extension AssistantViewController: StoryboardLoadable {
+extension AssistantViewController: StoryboardRepresentable {
    
-    static var storybaordName: String {
+    static var sbName: String {
         return "Player"
     }
 }

@@ -7,9 +7,18 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		911C241421B804C700F96CA4 /* NibRepresentable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 911C241321B804C700F96CA4 /* NibRepresentable.swift */; };
+		911C241621B8050600F96CA4 /* Identifierable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 911C241521B8050600F96CA4 /* Identifierable.swift */; };
+		911C243221B80BA300F96CA4 /* MBUIKitTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 911C243121B80BA300F96CA4 /* MBUIKitTests.swift */; };
+		911C243421B80BA300F96CA4 /* MBUIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 913BEAE721B6BEB1005FF1BB /* MBUIKit.framework */; };
+		911C243C21B80BBD00F96CA4 /* StoryboardRepresentableTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 911C243B21B80BBD00F96CA4 /* StoryboardRepresentableTests.swift */; };
+		911C243F21B80C7900F96CA4 /* MusicBoxTest.xib in Resources */ = {isa = PBXBuildFile; fileRef = 911C243E21B80C7900F96CA4 /* MusicBoxTest.xib */; };
+		911C244121B80C8E00F96CA4 /* MusicBoxTest.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 911C244021B80C8E00F96CA4 /* MusicBoxTest.storyboard */; };
+		911C244321B811DC00F96CA4 /* NibRepresentableTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 911C244221B811DC00F96CA4 /* NibRepresentableTests.swift */; };
+		911C244521B812E800F96CA4 /* MusicBoxTestView2.xib in Resources */ = {isa = PBXBuildFile; fileRef = 911C244421B812E800F96CA4 /* MusicBoxTestView2.xib */; };
 		913BEB0021B6BED0005FF1BB /* MBUIKit.h in Headers */ = {isa = PBXBuildFile; fileRef = 913BEAFE21B6BED0005FF1BB /* MBUIKit.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		913BEB0721B6BF26005FF1BB /* UIView+InterfaceBuilding.swift in Sources */ = {isa = PBXBuildFile; fileRef = 913BEA6621B6B6F4005FF1BB /* UIView+InterfaceBuilding.swift */; };
-		913BEB0821B6BF26005FF1BB /* StoryboardLoadable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 913BEA7121B6B9CF005FF1BB /* StoryboardLoadable.swift */; };
+		913BEB0821B6BF26005FF1BB /* StoryboardRepresentable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 913BEA7121B6B9CF005FF1BB /* StoryboardRepresentable.swift */; };
 		913BEB2821B6BF59005FF1BB /* MBFoundation.h in Headers */ = {isa = PBXBuildFile; fileRef = 913BEB2621B6BF59005FF1BB /* MBFoundation.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		913BEB2A21B6BF6E005FF1BB /* Observer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 913BEA6A21B6B720005FF1BB /* Observer.swift */; };
 		913BEB3921B6BF83005FF1BB /* Standard.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 913BEB3021B6BF83005FF1BB /* Standard.framework */; };
@@ -19,6 +28,13 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
+		911C243521B80BA300F96CA4 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 913BEA0F21B6B552005FF1BB /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 913BEAE621B6BEB1005FF1BB;
+			remoteInfo = MBUIKit;
+		};
 		913BEB3A21B6BF83005FF1BB /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = 913BEA0F21B6B552005FF1BB /* Project object */;
@@ -29,10 +45,20 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		911C241321B804C700F96CA4 /* NibRepresentable.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NibRepresentable.swift; sourceTree = "<group>"; };
+		911C241521B8050600F96CA4 /* Identifierable.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Identifierable.swift; sourceTree = "<group>"; };
+		911C242F21B80BA300F96CA4 /* MBUIKitTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = MBUIKitTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		911C243121B80BA300F96CA4 /* MBUIKitTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MBUIKitTests.swift; sourceTree = "<group>"; };
+		911C243321B80BA300F96CA4 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		911C243B21B80BBD00F96CA4 /* StoryboardRepresentableTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StoryboardRepresentableTests.swift; sourceTree = "<group>"; };
+		911C243E21B80C7900F96CA4 /* MusicBoxTest.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = MusicBoxTest.xib; sourceTree = "<group>"; };
+		911C244021B80C8E00F96CA4 /* MusicBoxTest.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = MusicBoxTest.storyboard; sourceTree = "<group>"; };
+		911C244221B811DC00F96CA4 /* NibRepresentableTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NibRepresentableTests.swift; sourceTree = "<group>"; };
+		911C244421B812E800F96CA4 /* MusicBoxTestView2.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = MusicBoxTestView2.xib; sourceTree = "<group>"; };
 		913BEA6221B6B6BD005FF1BB /* Operators.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Operators.swift; sourceTree = "<group>"; };
 		913BEA6621B6B6F4005FF1BB /* UIView+InterfaceBuilding.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UIView+InterfaceBuilding.swift"; sourceTree = "<group>"; };
 		913BEA6A21B6B720005FF1BB /* Observer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Observer.swift; sourceTree = "<group>"; };
-		913BEA7121B6B9CF005FF1BB /* StoryboardLoadable.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StoryboardLoadable.swift; sourceTree = "<group>"; };
+		913BEA7121B6B9CF005FF1BB /* StoryboardRepresentable.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StoryboardRepresentable.swift; sourceTree = "<group>"; };
 		913BEAE721B6BEB1005FF1BB /* MBUIKit.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = MBUIKit.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		913BEAFE21B6BED0005FF1BB /* MBUIKit.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MBUIKit.h; sourceTree = "<group>"; };
 		913BEAFF21B6BED0005FF1BB /* Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
@@ -48,6 +74,14 @@
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
+		911C242C21B80BA300F96CA4 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				911C243421B80BA300F96CA4 /* MBUIKit.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		913BEAE421B6BEB1005FF1BB /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
@@ -80,13 +114,44 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		911C243021B80BA300F96CA4 /* MBUIKitTests */ = {
+			isa = PBXGroup;
+			children = (
+				911C243121B80BA300F96CA4 /* MBUIKitTests.swift */,
+				911C243D21B80C5700F96CA4 /* Resource */,
+				911C243A21B80BAA00F96CA4 /* InterfaceBuildingTests */,
+				911C243321B80BA300F96CA4 /* Info.plist */,
+			);
+			path = MBUIKitTests;
+			sourceTree = "<group>";
+		};
+		911C243A21B80BAA00F96CA4 /* InterfaceBuildingTests */ = {
+			isa = PBXGroup;
+			children = (
+				911C243B21B80BBD00F96CA4 /* StoryboardRepresentableTests.swift */,
+				911C244221B811DC00F96CA4 /* NibRepresentableTests.swift */,
+			);
+			path = InterfaceBuildingTests;
+			sourceTree = "<group>";
+		};
+		911C243D21B80C5700F96CA4 /* Resource */ = {
+			isa = PBXGroup;
+			children = (
+				911C243E21B80C7900F96CA4 /* MusicBoxTest.xib */,
+				911C244421B812E800F96CA4 /* MusicBoxTestView2.xib */,
+				911C244021B80C8E00F96CA4 /* MusicBoxTest.storyboard */,
+			);
+			path = Resource;
+			sourceTree = "<group>";
+		};
 		913BEA0E21B6B552005FF1BB = {
 			isa = PBXGroup;
 			children = (
+				913BEB4C21B6BFB7005FF1BB /* Standard */,
 				913BEB0F21B6BF3B005FF1BB /* MBFoundation */,
 				913BEAE821B6BEB1005FF1BB /* MBUIKit */,
+				911C243021B80BA300F96CA4 /* MBUIKitTests */,
 				913BEA1921B6B552005FF1BB /* Products */,
-				913BEB4C21B6BFB7005FF1BB /* Standard */,
 				913BEB3C21B6BF83005FF1BB /* StandardTests */,
 			);
 			sourceTree = "<group>";
@@ -98,6 +163,7 @@
 				913BEB0E21B6BF3B005FF1BB /* MBFoundation.framework */,
 				913BEB3021B6BF83005FF1BB /* Standard.framework */,
 				913BEB3821B6BF83005FF1BB /* StandardTests.xctest */,
+				911C242F21B80BA300F96CA4 /* MBUIKitTests.xctest */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -113,7 +179,9 @@
 		913BEA6E21B6B960005FF1BB /* InterfaceBuilding */ = {
 			isa = PBXGroup;
 			children = (
-				913BEA7121B6B9CF005FF1BB /* StoryboardLoadable.swift */,
+				913BEA7121B6B9CF005FF1BB /* StoryboardRepresentable.swift */,
+				911C241321B804C700F96CA4 /* NibRepresentable.swift */,
+				911C241521B8050600F96CA4 /* Identifierable.swift */,
 				913BEA6621B6B6F4005FF1BB /* UIView+InterfaceBuilding.swift */,
 			);
 			path = InterfaceBuilding;
@@ -236,6 +304,24 @@
 /* End PBXHeadersBuildPhase section */
 
 /* Begin PBXNativeTarget section */
+		911C242E21B80BA300F96CA4 /* MBUIKitTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 911C243721B80BA300F96CA4 /* Build configuration list for PBXNativeTarget "MBUIKitTests" */;
+			buildPhases = (
+				911C242B21B80BA300F96CA4 /* Sources */,
+				911C242C21B80BA300F96CA4 /* Frameworks */,
+				911C242D21B80BA300F96CA4 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				911C243621B80BA300F96CA4 /* PBXTargetDependency */,
+			);
+			name = MBUIKitTests;
+			productName = MBUIKitTests;
+			productReference = 911C242F21B80BA300F96CA4 /* MBUIKitTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
 		913BEAE621B6BEB1005FF1BB /* MBUIKit */ = {
 			isa = PBXNativeTarget;
 			buildConfigurationList = 913BEAF821B6BEB2005FF1BB /* Build configuration list for PBXNativeTarget "MBUIKit" */;
@@ -318,6 +404,9 @@
 				LastUpgradeCheck = 1010;
 				ORGANIZATIONNAME = dumbass;
 				TargetAttributes = {
+					911C242E21B80BA300F96CA4 = {
+						CreatedOnToolsVersion = 10.1;
+					};
 					913BEAE621B6BEB1005FF1BB = {
 						CreatedOnToolsVersion = 10.1;
 					};
@@ -348,11 +437,22 @@
 				913BEB0D21B6BF3B005FF1BB /* MBFoundation */,
 				913BEB2F21B6BF83005FF1BB /* Standard */,
 				913BEB3721B6BF83005FF1BB /* StandardTests */,
+				911C242E21B80BA300F96CA4 /* MBUIKitTests */,
 			);
 		};
 /* End PBXProject section */
 
 /* Begin PBXResourcesBuildPhase section */
+		911C242D21B80BA300F96CA4 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				911C244521B812E800F96CA4 /* MusicBoxTestView2.xib in Resources */,
+				911C244121B80C8E00F96CA4 /* MusicBoxTest.storyboard in Resources */,
+				911C243F21B80C7900F96CA4 /* MusicBoxTest.xib in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		913BEAE521B6BEB1005FF1BB /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
@@ -384,12 +484,24 @@
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
+		911C242B21B80BA300F96CA4 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				911C243221B80BA300F96CA4 /* MBUIKitTests.swift in Sources */,
+				911C244321B811DC00F96CA4 /* NibRepresentableTests.swift in Sources */,
+				911C243C21B80BBD00F96CA4 /* StoryboardRepresentableTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		913BEAE321B6BEB1005FF1BB /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
 				913BEB0721B6BF26005FF1BB /* UIView+InterfaceBuilding.swift in Sources */,
-				913BEB0821B6BF26005FF1BB /* StoryboardLoadable.swift in Sources */,
+				913BEB0821B6BF26005FF1BB /* StoryboardRepresentable.swift in Sources */,
+				911C241621B8050600F96CA4 /* Identifierable.swift in Sources */,
+				911C241421B804C700F96CA4 /* NibRepresentable.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -420,6 +532,11 @@
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXTargetDependency section */
+		911C243621B80BA300F96CA4 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 913BEAE621B6BEB1005FF1BB /* MBUIKit */;
+			targetProxy = 911C243521B80BA300F96CA4 /* PBXContainerItemProxy */;
+		};
 		913BEB3B21B6BF83005FF1BB /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
 			target = 913BEB2F21B6BF83005FF1BB /* Standard */;
@@ -428,6 +545,40 @@
 /* End PBXTargetDependency section */
 
 /* Begin XCBuildConfiguration section */
+		911C243821B80BA300F96CA4 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = MBUIKitTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.dumbass.MBUIKitTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.2;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		911C243921B80BA300F96CA4 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = MBUIKitTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.dumbass.MBUIKitTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.2;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
 		913BEA2A21B6B553005FF1BB /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
@@ -737,6 +888,15 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
+		911C243721B80BA300F96CA4 /* Build configuration list for PBXNativeTarget "MBUIKitTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				911C243821B80BA300F96CA4 /* Debug */,
+				911C243921B80BA300F96CA4 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
 		913BEA1221B6B552005FF1BB /* Build configuration list for PBXProject "Utils" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
