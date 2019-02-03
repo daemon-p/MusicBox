@@ -13,16 +13,16 @@
 		911C23C821B6CC5000F96CA4 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 911C23C621B6CC5000F96CA4 /* LaunchScreen.storyboard */; };
 		911C23D321B6CC5000F96CA4 /* HostTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 911C23D221B6CC5000F96CA4 /* HostTests.swift */; };
 		911C23DE21B6CC5000F96CA4 /* HostUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 911C23DD21B6CC5000F96CA4 /* HostUITests.swift */; };
-		911C23FA21B6CD8D00F96CA4 /* MusicBox.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 911C23F921B6CD8D00F96CA4 /* MusicBox.framework */; };
-		911C23FB21B6CD8D00F96CA4 /* MusicBox.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 911C23F921B6CD8D00F96CA4 /* MusicBox.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
-		911C23FD21B6CD8D00F96CA4 /* MBUIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 911C23FC21B6CD8D00F96CA4 /* MBUIKit.framework */; };
-		911C23FE21B6CD8D00F96CA4 /* MBUIKit.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 911C23FC21B6CD8D00F96CA4 /* MBUIKit.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
-		911C240021B6CD8D00F96CA4 /* MBFoundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 911C23FF21B6CD8D00F96CA4 /* MBFoundation.framework */; };
-		911C240121B6CD8D00F96CA4 /* MBFoundation.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 911C23FF21B6CD8D00F96CA4 /* MBFoundation.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
-		911C240321B6CD8D00F96CA4 /* Standard.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 911C240221B6CD8D00F96CA4 /* Standard.framework */; };
-		911C240421B6CD8D00F96CA4 /* Standard.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 911C240221B6CD8D00F96CA4 /* Standard.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 		911C240621B6CE9F00F96CA4 /* Main.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 911C23F821B6CCF500F96CA4 /* Main.xcassets */; };
 		911C240B21B6D7A200F96CA4 /* Toca Toca.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 911C23F721B6CCC400F96CA4 /* Toca Toca.mp3 */; };
+		91DBDDBD21C630EC00DF6A75 /* MusicBox.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 91DBDDBC21C630EC00DF6A75 /* MusicBox.framework */; };
+		91DBDDBE21C630EC00DF6A75 /* MusicBox.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 91DBDDBC21C630EC00DF6A75 /* MusicBox.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		91DBDDC021C630EC00DF6A75 /* MBUIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 91DBDDBF21C630EC00DF6A75 /* MBUIKit.framework */; };
+		91DBDDC121C630EC00DF6A75 /* MBUIKit.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 91DBDDBF21C630EC00DF6A75 /* MBUIKit.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		91DBDDC321C630EC00DF6A75 /* MBFoundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 91DBDDC221C630EC00DF6A75 /* MBFoundation.framework */; };
+		91DBDDC421C630EC00DF6A75 /* MBFoundation.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 91DBDDC221C630EC00DF6A75 /* MBFoundation.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		91DBDDC621C630EC00DF6A75 /* Standard.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 91DBDDC521C630EC00DF6A75 /* Standard.framework */; };
+		91DBDDC721C630EC00DF6A75 /* Standard.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 91DBDDC521C630EC00DF6A75 /* Standard.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -43,16 +43,16 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXCopyFilesBuildPhase section */
-		911C240521B6CD8D00F96CA4 /* Embed Frameworks */ = {
+		91DBDDC821C630ED00DF6A75 /* Embed Frameworks */ = {
 			isa = PBXCopyFilesBuildPhase;
 			buildActionMask = 2147483647;
 			dstPath = "";
 			dstSubfolderSpec = 10;
 			files = (
-				911C23FE21B6CD8D00F96CA4 /* MBUIKit.framework in Embed Frameworks */,
-				911C23FB21B6CD8D00F96CA4 /* MusicBox.framework in Embed Frameworks */,
-				911C240121B6CD8D00F96CA4 /* MBFoundation.framework in Embed Frameworks */,
-				911C240421B6CD8D00F96CA4 /* Standard.framework in Embed Frameworks */,
+				91DBDDC121C630EC00DF6A75 /* MBUIKit.framework in Embed Frameworks */,
+				91DBDDBE21C630EC00DF6A75 /* MusicBox.framework in Embed Frameworks */,
+				91DBDDC421C630EC00DF6A75 /* MBFoundation.framework in Embed Frameworks */,
+				91DBDDC721C630EC00DF6A75 /* Standard.framework in Embed Frameworks */,
 			);
 			name = "Embed Frameworks";
 			runOnlyForDeploymentPostprocessing = 0;
@@ -74,10 +74,10 @@
 		911C23DF21B6CC5000F96CA4 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		911C23F721B6CCC400F96CA4 /* Toca Toca.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = "Toca Toca.mp3"; sourceTree = "<group>"; };
 		911C23F821B6CCF500F96CA4 /* Main.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Main.xcassets; sourceTree = "<group>"; };
-		911C23F921B6CD8D00F96CA4 /* MusicBox.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = MusicBox.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		911C23FC21B6CD8D00F96CA4 /* MBUIKit.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = MBUIKit.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		911C23FF21B6CD8D00F96CA4 /* MBFoundation.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = MBFoundation.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		911C240221B6CD8D00F96CA4 /* Standard.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = Standard.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		91DBDDBC21C630EC00DF6A75 /* MusicBox.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = MusicBox.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		91DBDDBF21C630EC00DF6A75 /* MBUIKit.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = MBUIKit.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		91DBDDC221C630EC00DF6A75 /* MBFoundation.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = MBFoundation.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		91DBDDC521C630EC00DF6A75 /* Standard.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = Standard.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -85,10 +85,10 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				911C23FD21B6CD8D00F96CA4 /* MBUIKit.framework in Frameworks */,
-				911C23FA21B6CD8D00F96CA4 /* MusicBox.framework in Frameworks */,
-				911C240021B6CD8D00F96CA4 /* MBFoundation.framework in Frameworks */,
-				911C240321B6CD8D00F96CA4 /* Standard.framework in Frameworks */,
+				91DBDDC021C630EC00DF6A75 /* MBUIKit.framework in Frameworks */,
+				91DBDDBD21C630EC00DF6A75 /* MusicBox.framework in Frameworks */,
+				91DBDDC321C630EC00DF6A75 /* MBFoundation.framework in Frameworks */,
+				91DBDDC621C630EC00DF6A75 /* Standard.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -112,14 +112,15 @@
 		911C23B121B6CC4E00F96CA4 = {
 			isa = PBXGroup;
 			children = (
+				91DBDDC521C630EC00DF6A75 /* Standard.framework */,
+				91DBDDC221C630EC00DF6A75 /* MBFoundation.framework */,
+				91DBDDBF21C630EC00DF6A75 /* MBUIKit.framework */,
+				91DBDDBC21C630EC00DF6A75 /* MusicBox.framework */,
 				911C23BC21B6CC4E00F96CA4 /* Host */,
 				911C23D121B6CC5000F96CA4 /* HostTests */,
 				911C23DC21B6CC5000F96CA4 /* HostUITests */,
 				911C23BB21B6CC4E00F96CA4 /* Products */,
-				911C23FF21B6CD8D00F96CA4 /* MBFoundation.framework */,
-				911C23FC21B6CD8D00F96CA4 /* MBUIKit.framework */,
-				911C23F921B6CD8D00F96CA4 /* MusicBox.framework */,
-				911C240221B6CD8D00F96CA4 /* Standard.framework */,
+				91DBDDB721C6309500DF6A75 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -165,6 +166,13 @@
 			path = HostUITests;
 			sourceTree = "<group>";
 		};
+		91DBDDB721C6309500DF6A75 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -175,7 +183,7 @@
 				911C23B621B6CC4E00F96CA4 /* Sources */,
 				911C23B721B6CC4E00F96CA4 /* Frameworks */,
 				911C23B821B6CC4E00F96CA4 /* Resources */,
-				911C240521B6CD8D00F96CA4 /* Embed Frameworks */,
+				91DBDDC821C630ED00DF6A75 /* Embed Frameworks */,
 			);
 			buildRules = (
 			);
@@ -477,6 +485,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 8PJZBHFZQF;
 				INFOPLIST_FILE = Host/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
@@ -494,6 +503,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 8PJZBHFZQF;
 				INFOPLIST_FILE = Host/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",

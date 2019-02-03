@@ -11,16 +11,9 @@ class AssistantViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         
-        initPlayer()
         setupAnimation()
         registerNotifications()
         registerObservers()
-    }
-    
-    private func initPlayer() {
-        Assistent.audioPlayer.playerStateChanged = { [weak self] _, _, new in
-            new.isPlaying ? self?.startAnimation() : self?.pauseAnimation()
-        }
     }
     
     private lazy var anim: CAAnimation = {
@@ -35,9 +28,7 @@ class AssistantViewController: UIViewController {
         return anim
     }()
     
-    private var notificationObjcs = [NSObjectProtocol]()
     private var observations = [NSKeyValueObservation]()
-
 }
 
 // MARK: - IBActions
@@ -74,89 +65,12 @@ extension AssistantViewController {
     }
 }
 
-// MARK: - AssistantViewController.Notifications
-extension AssistantViewController {
-    
-    private func registerNotifications() {
-        
-        NotificationCenter.default.addObserver(self, selector: #selector(handleNotification(_:)), name: UIApplication.didEnterBackgroundNotification, object: nil)
-        
-        NotificationCenter.default.addObserver(self, selector: #selector(handleNotification(_:)), name: UIApplication.willEnterForegroundNotification, object: nil)
-
-        NotificationCenter.default.addObserver(self, selector: #selector(handleNotification(_:)), name: AVAudioSession.routeChangeNotification, object: nil)
-
-        NotificationCenter.default.addObserver(self, selector: #selector(handleNotification(_:)), name: AVAudioSession.interruptionNotification, object: nil)
-
-        
-        notificationObjcs = [
-            NotificationCenter.default.addObserver(
-                forName: UIApplication.didEnterBackgroundNotification,
-                object: nil, queue: nil,
-                using: { [weak self] _ in
-                    self?.pauseAnimation()
-                }
-            ),
-            NotificationCenter.default.addObserver(
-                forName: UIApplication.willEnterForegroundNotification,
-                object: nil, queue: nil,
-                using: { [weak self]_ in
-                    self?.startAnimation()
-                }
-            ),
-            NotificationCenter.default.addObserver(
-                forName: AVAudioSession.routeChangeNotification,
-                object: nil, queue: .main,
-                using: { notification in
-                    
-                    guard
-                        let userInfo = notification.userInfo,
-                        let reasonRawValue = userInfo[AVAudioSessionRouteChangeReasonKey] as? UInt,
-                        let reason = AVAudioSession.RouteChangeReason(rawValue: reasonRawValue),
-                        reason == .oldDeviceUnavailable,
-                        let previousRoute = userInfo[AVAudioSessionRouteChangePreviousRouteKey] as? AVAudioSessionRouteDescription,
-                        previousRoute.outputs.first?.portType == .headphones else {
-                            return
-                    }
-                    Assistent.audioPlayer.pause()
-                }
-            ),
-            NotificationCenter.default.addObserver(
-                forName: AVAudioSession.interruptionNotification,
-                object: nil, queue: nil,
-                using: { notification in
-                    
-                    guard
-                        let typeRawValue = notification.userInfo?["AVAudioSessionInterruptionTypeKey"] as? UInt,
-                        let type = AVAudioSession.InterruptionType(rawValue: typeRawValue) else {
-                            return
-                    }
-                    
-                    switch type {
-                    case .began: Assistent.audioPlayer.pause()
-                    case .ended: Assistent.audioPlayer.play()
-                    }
-                }
-            ),
-        ]
-    }
-    
-    @IBAction private func handleNotification(_ notification: NSNotification) {
-        
-    }
-    
-    private func resignNotifications() {
-        notificationObjcs.forEach(NotificationCenter.default.removeObserver)
-        notificationObjcs.removeAll()
-        NotificationCenter.default.removeObserver(self)
-    }
-}
-
-
 // MARK: - Animation
 extension AssistantViewController {
     
     private func startAnimation() {
-        guard Assistent.audioPlayer.state.isPlaying else { return }
+        
+        guard Assistent.audioPlayer.isPlaying else { return }
         
         let pauseTime = view.layer.timeOffset
         
@@ -175,10 +89,68 @@ extension AssistantViewController {
         view.layer.timeOffset = time
     }
     
-    
     private func setupAnimation() {
         view.layer.add(anim, forKey: "com.dumbass.AssistiveViewController.transform.rotation.z")
         pauseAnimation()
+    }
+}
+
+// MARK: - AssistantViewController.Notifications
+extension AssistantViewController {
+    
+    private func registerNotifications() {
+        
+        NotificationCenter.default.addObserver(self, selector: #selector(handleNotification(_:)), name: UIApplication.didEnterBackgroundNotification, object: nil)
+        
+        NotificationCenter.default.addObserver(self, selector: #selector(handleNotification(_:)), name: UIApplication.willEnterForegroundNotification, object: nil)
+
+        NotificationCenter.default.addObserver(self, selector: #selector(handleNotification(_:)), name: AVAudioSession.routeChangeNotification, object: nil)
+
+        NotificationCenter.default.addObserver(self, selector: #selector(handleNotification(_:)), name: AVAudioSession.interruptionNotification, object: nil)
+
+        NotificationCenter.default.addObserver(self, selector: #selector(handleNotification(_:)), name: AudioPlayer.playerStateDidChangedNotification, object: nil)
+    }
+    
+    private func resignNotifications() {
+        NotificationCenter.default.removeObserver(self)
+    }
+        
+    @IBAction private func handleNotification(_ notification: NSNotification) {
+        
+        switch notification.name {
+        case UIApplication.didEnterBackgroundNotification:
+            pauseAnimation()
+        case UIApplication.willEnterForegroundNotification:
+            startAnimation()
+        case AVAudioSession.routeChangeNotification:
+            guard
+                let userInfo = notification.userInfo,
+                let reasonRawValue = userInfo[AVAudioSessionRouteChangeReasonKey] as? UInt,
+                let reason = AVAudioSession.RouteChangeReason(rawValue: reasonRawValue),
+                reason == .oldDeviceUnavailable,
+                let previousRoute = userInfo[AVAudioSessionRouteChangePreviousRouteKey] as? AVAudioSessionRouteDescription,
+                previousRoute.outputs.first?.portType == .headphones else {
+                    return
+            }
+            Assistent.audioPlayer.pause()
+        case AVAudioSession.interruptionNotification:
+            guard
+                let typeRawValue = notification.userInfo?["AVAudioSessionInterruptionTypeKey"] as? UInt,
+                let type = AVAudioSession.InterruptionType(rawValue: typeRawValue) else {
+                    return
+            }
+            
+            switch type {
+            case .began: Assistent.audioPlayer.pause()
+            case .ended: Assistent.audioPlayer.play()
+            }
+        case AudioPlayer.playerStateDidChangedNotification:
+            guard let newValue = notification.userInfo?["oldValue"] as? AudioPlayer.State else {
+                return
+            }
+            newValue.isPlaying ? startAnimation() : pauseAnimation()
+        default: break
+        }
     }
 }
 

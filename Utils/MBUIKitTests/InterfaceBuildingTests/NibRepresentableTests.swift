@@ -13,6 +13,7 @@ class MusicBoxTestView0: UIView, NibPresentable {
 
 class MusicBoxTestView1: UIView, NibPresentable {
     
+    @IBOutlet weak var label: UILabel!
     static var nibName: String {
         return _nibName
     }
@@ -28,8 +29,10 @@ class MusicBoxTestView2: UIView, NibPresentable {
 class NibRepresentableTests: XCTestCase {
     
     func testNibIntance() {
-        XCTAssertNoThrow(MusicBoxTestView0.nibInstance())
-        XCTAssertNoThrow(MusicBoxTestView1.nibInstance())
-        XCTAssertNoThrow(MusicBoxTestView2.nibInstance())
+//        XCTAssertNotNil(MusicBoxTestView0.nibInstance())
+        XCTAssertNotNil(MusicBoxTestView1.nibInstance())
+        MusicBoxTestView1.nibInstance()?.label
+
+        XCTAssertNotNil(MusicBoxTestView2.nibInstance())
     }
 }

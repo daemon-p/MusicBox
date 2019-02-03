@@ -3,24 +3,17 @@ import Standard
 
 extension String: Swift.Error {}
 
-public class AudioPlaayer: NSObject {
-  
-    init(resource: AVAudioPlayer.Resource? = nil) throws {
-       
-        super.init()
-        try setup()
-        try resource.flatMap(set)
-    }
-    
+public class AudioPlayer: NSObject {
+        
     deinit {
     }
     
-    private func setup() throws {
+    func setup() throws {
         try AVAudioSession.sharedInstance().setCategory(.playback, mode: .default)
         try AVAudioSession.sharedInstance().setActive(true)
     }
 
-    public func set(resource: AVAudioPlayer.Resource) throws {
+    public func set(resource: Resource) throws {
         
         switch resource {
         case .data(let data):
@@ -34,7 +27,6 @@ public class AudioPlaayer: NSObject {
                 throw "Cannot load source name: \(name) with extension: \(ext ?? "") in bundle: \(bundle)"
             }
         }
-        
         player?.delegate = self
     }
     
@@ -84,11 +76,20 @@ public class AudioPlaayer: NSObject {
         return player?.duration ?? 0
     }
 
-    var playerStateChanged: ((AudioPlaayer, AVAudioPlayer.State, AVAudioPlayer.State) -> Void)?
+    public static var playerStateDidChangedNotification: Notification.Name {
+        return .init("com.dumbass.playerStateDidChangedNotification")
+    }
     
-    private(set) var state: AVAudioPlayer.State = .none {
+    private(set) var state: State = .none {
         didSet {
-            playerStateChanged?(self, oldValue, state)
+            if state == oldValue { return }
+            NotificationCenter.default.post(
+                name: AudioPlayer.playerStateDidChangedNotification,
+                object: nil,
+                userInfo: [
+                    "oldValue": oldValue,
+                    "newValue": state
+                ])
         }
     }
     
@@ -99,9 +100,9 @@ public class AudioPlaayer: NSObject {
     }
 }
 
-extension AVAudioPlayer {
+extension AudioPlayer {
     
-    enum State {
+    public enum State {
         
         case playing
         case paused
@@ -132,7 +133,7 @@ extension AVAudioPlayer {
     }
 }
 
-extension AudioPlaayer: AVAudioPlayerDelegate {
+extension AudioPlayer: AVAudioPlayerDelegate {
     
     private func audioPlayerDidFinishPlaying(_ pl: AVAudioPlayer, successfully flag: Bool) {
         state = .stopped

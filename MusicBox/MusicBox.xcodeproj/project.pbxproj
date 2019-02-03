@@ -9,25 +9,23 @@
 /* Begin PBXBuildFile section */
 		911C240821B6CEDC00F96CA4 /* Shared.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 911C240721B6CEDC00F96CA4 /* Shared.xcassets */; };
 		911C240A21B6D16F00F96CA4 /* Assistant.swift in Sources */ = {isa = PBXBuildFile; fileRef = 911C240921B6D16F00F96CA4 /* Assistant.swift */; };
-		913BEA5621B6B62B005FF1BB /* Audio.h in Headers */ = {isa = PBXBuildFile; fileRef = 913BEA4821B6B62A005FF1BB /* Audio.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		913BEA5621B6B62B005FF1BB /* MusicBox.h in Headers */ = {isa = PBXBuildFile; fileRef = 913BEA4821B6B62A005FF1BB /* MusicBox.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		913BEA6521B6B6E6005FF1BB /* AssistantViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 913BEA6421B6B6E6005FF1BB /* AssistantViewController.swift */; };
 		913BEA6921B6B6FB005FF1BB /* AudioPlayer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 913BEA6821B6B6FB005FF1BB /* AudioPlayer.swift */; };
 		913BEA6D21B6B75B005FF1BB /* Player.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 913BEA6C21B6B75B005FF1BB /* Player.storyboard */; };
-		913BEB5C21B6C876005FF1BB /* MBUIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 913BEB5B21B6C876005FF1BB /* MBUIKit.framework */; };
-		913BEB6121B6C934005FF1BB /* Standard.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 913BEB6021B6C934005FF1BB /* Standard.framework */; };
+		91DBDDCA21C630FC00DF6A75 /* MBUIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 91DBDDC921C630FC00DF6A75 /* MBUIKit.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		911C240721B6CEDC00F96CA4 /* Shared.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Shared.xcassets; sourceTree = "<group>"; };
 		911C240921B6D16F00F96CA4 /* Assistant.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Assistant.swift; sourceTree = "<group>"; };
 		913BEA4521B6B62A005FF1BB /* MusicBox.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = MusicBox.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		913BEA4821B6B62A005FF1BB /* Audio.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Audio.h; sourceTree = "<group>"; };
+		913BEA4821B6B62A005FF1BB /* MusicBox.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MusicBox.h; sourceTree = "<group>"; };
 		913BEA4921B6B62A005FF1BB /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		913BEA6421B6B6E6005FF1BB /* AssistantViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AssistantViewController.swift; sourceTree = "<group>"; };
 		913BEA6821B6B6FB005FF1BB /* AudioPlayer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AudioPlayer.swift; sourceTree = "<group>"; };
 		913BEA6C21B6B75B005FF1BB /* Player.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Player.storyboard; sourceTree = "<group>"; };
-		913BEB5B21B6C876005FF1BB /* MBUIKit.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = MBUIKit.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		913BEB6021B6C934005FF1BB /* Standard.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = Standard.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		91DBDDC921C630FC00DF6A75 /* MBUIKit.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = MBUIKit.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -35,8 +33,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				913BEB6121B6C934005FF1BB /* Standard.framework in Frameworks */,
-				913BEB5C21B6C876005FF1BB /* MBUIKit.framework in Frameworks */,
+				91DBDDCA21C630FC00DF6A75 /* MBUIKit.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -76,7 +73,7 @@
 		913BEA5F21B6B662005FF1BB /* Supporting Files */ = {
 			isa = PBXGroup;
 			children = (
-				913BEA4821B6B62A005FF1BB /* Audio.h */,
+				913BEA4821B6B62A005FF1BB /* MusicBox.h */,
 				913BEA4921B6B62A005FF1BB /* Info.plist */,
 			);
 			path = "Supporting Files";
@@ -85,8 +82,7 @@
 		913BEB5A21B6C876005FF1BB /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
-				913BEB6021B6C934005FF1BB /* Standard.framework */,
-				913BEB5B21B6C876005FF1BB /* MBUIKit.framework */,
+				91DBDDC921C630FC00DF6A75 /* MBUIKit.framework */,
 			);
 			name = Frameworks;
 			sourceTree = "<group>";
@@ -98,7 +94,7 @@
 			isa = PBXHeadersBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				913BEA5621B6B62B005FF1BB /* Audio.h in Headers */,
+				913BEA5621B6B62B005FF1BB /* MusicBox.h in Headers */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -319,6 +315,7 @@
 					"@executable_path/Frameworks",
 					"@loader_path/Frameworks",
 				);
+				MACH_O_TYPE = mh_dylib;
 				PRODUCT_BUNDLE_IDENTIFIER = com.dumbass.Audio;
 				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
 				SKIP_INSTALL = YES;
@@ -343,6 +340,7 @@
 					"@executable_path/Frameworks",
 					"@loader_path/Frameworks",
 				);
+				MACH_O_TYPE = mh_dylib;
 				PRODUCT_BUNDLE_IDENTIFIER = com.dumbass.Audio;
 				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
 				SKIP_INSTALL = YES;

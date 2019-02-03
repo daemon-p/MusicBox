@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		9111624C21FB4D8200B7CAE9 /* ReusableKit.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9111624B21FB4D8200B7CAE9 /* ReusableKit.swift */; };
+		9111628D21FB56E900B7CAE9 /* Repetition.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9111628C21FB56E900B7CAE9 /* Repetition.swift */; };
 		911C241421B804C700F96CA4 /* NibRepresentable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 911C241321B804C700F96CA4 /* NibRepresentable.swift */; };
 		911C241621B8050600F96CA4 /* Identifierable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 911C241521B8050600F96CA4 /* Identifierable.swift */; };
 		911C243221B80BA300F96CA4 /* MBUIKitTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 911C243121B80BA300F96CA4 /* MBUIKitTests.swift */; };
@@ -45,6 +47,8 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		9111624B21FB4D8200B7CAE9 /* ReusableKit.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ReusableKit.swift; sourceTree = "<group>"; };
+		9111628C21FB56E900B7CAE9 /* Repetition.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Repetition.swift; sourceTree = "<group>"; };
 		911C241321B804C700F96CA4 /* NibRepresentable.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NibRepresentable.swift; sourceTree = "<group>"; };
 		911C241521B8050600F96CA4 /* Identifierable.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Identifierable.swift; sourceTree = "<group>"; };
 		911C242F21B80BA300F96CA4 /* MBUIKitTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = MBUIKitTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -55,6 +59,7 @@
 		911C244021B80C8E00F96CA4 /* MusicBoxTest.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = MusicBoxTest.storyboard; sourceTree = "<group>"; };
 		911C244221B811DC00F96CA4 /* NibRepresentableTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NibRepresentableTests.swift; sourceTree = "<group>"; };
 		911C244421B812E800F96CA4 /* MusicBoxTestView2.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = MusicBoxTestView2.xib; sourceTree = "<group>"; };
+		911C244821B971D700F96CA4 /* Nib_MusicBoxTest.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = Nib_MusicBoxTest.xib; sourceTree = "<group>"; };
 		913BEA6221B6B6BD005FF1BB /* Operators.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Operators.swift; sourceTree = "<group>"; };
 		913BEA6621B6B6F4005FF1BB /* UIView+InterfaceBuilding.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UIView+InterfaceBuilding.swift"; sourceTree = "<group>"; };
 		913BEA6A21B6B720005FF1BB /* Observer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Observer.swift; sourceTree = "<group>"; };
@@ -114,6 +119,30 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		9111624A21FB4D5F00B7CAE9 /* Reusable */ = {
+			isa = PBXGroup;
+			children = (
+				9111624B21FB4D8200B7CAE9 /* ReusableKit.swift */,
+				9111624D21FB4EEC00B7CAE9 /* New Group */,
+			);
+			path = Reusable;
+			sourceTree = "<group>";
+		};
+		9111624D21FB4EEC00B7CAE9 /* New Group */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = "New Group";
+			sourceTree = "<group>";
+		};
+		9111628B21FB56CF00B7CAE9 /* Sequence */ = {
+			isa = PBXGroup;
+			children = (
+				9111628C21FB56E900B7CAE9 /* Repetition.swift */,
+			);
+			path = Sequence;
+			sourceTree = "<group>";
+		};
 		911C243021B80BA300F96CA4 /* MBUIKitTests */ = {
 			isa = PBXGroup;
 			children = (
@@ -138,6 +167,7 @@
 			isa = PBXGroup;
 			children = (
 				911C243E21B80C7900F96CA4 /* MusicBoxTest.xib */,
+				911C244821B971D700F96CA4 /* Nib_MusicBoxTest.xib */,
 				911C244421B812E800F96CA4 /* MusicBoxTestView2.xib */,
 				911C244021B80C8E00F96CA4 /* MusicBoxTest.storyboard */,
 			);
@@ -253,6 +283,7 @@
 		913BEB5321B6C0C7005FF1BB /* Source */ = {
 			isa = PBXGroup;
 			children = (
+				9111624A21FB4D5F00B7CAE9 /* Reusable */,
 				913BEA6E21B6B960005FF1BB /* InterfaceBuilding */,
 			);
 			path = Source;
@@ -269,6 +300,7 @@
 		913BEB5521B6C0E8005FF1BB /* Source */ = {
 			isa = PBXGroup;
 			children = (
+				9111628B21FB56CF00B7CAE9 /* Sequence */,
 				913BEA6121B6B69F005FF1BB /* Operators */,
 			);
 			path = Source;
@@ -499,6 +531,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				913BEB0721B6BF26005FF1BB /* UIView+InterfaceBuilding.swift in Sources */,
+				9111624C21FB4D8200B7CAE9 /* ReusableKit.swift in Sources */,
 				913BEB0821B6BF26005FF1BB /* StoryboardRepresentable.swift in Sources */,
 				911C241621B8050600F96CA4 /* Identifierable.swift in Sources */,
 				911C241421B804C700F96CA4 /* NibRepresentable.swift in Sources */,
@@ -517,6 +550,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				9111628D21FB56E900B7CAE9 /* Repetition.swift in Sources */,
 				913BEB5221B6BFCA005FF1BB /* Operators.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -719,6 +753,7 @@
 					"@loader_path/Frameworks",
 				);
 				LIBRARY_SEARCH_PATHS = "";
+				MACH_O_TYPE = staticlib;
 				PRODUCT_BUNDLE_IDENTIFIER = com.dumbass.MBUIKit;
 				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
 				SKIP_INSTALL = YES;
@@ -745,6 +780,7 @@
 					"@loader_path/Frameworks",
 				);
 				LIBRARY_SEARCH_PATHS = "";
+				MACH_O_TYPE = staticlib;
 				PRODUCT_BUNDLE_IDENTIFIER = com.dumbass.MBUIKit;
 				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
 				SKIP_INSTALL = YES;
@@ -769,6 +805,7 @@
 					"@executable_path/Frameworks",
 					"@loader_path/Frameworks",
 				);
+				MACH_O_TYPE = staticlib;
 				PRODUCT_BUNDLE_IDENTIFIER = com.dumbass.MBFoundation;
 				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
 				SKIP_INSTALL = YES;
@@ -793,6 +830,7 @@
 					"@executable_path/Frameworks",
 					"@loader_path/Frameworks",
 				);
+				MACH_O_TYPE = staticlib;
 				PRODUCT_BUNDLE_IDENTIFIER = com.dumbass.MBFoundation;
 				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
 				SKIP_INSTALL = YES;
@@ -817,6 +855,7 @@
 					"@executable_path/Frameworks",
 					"@loader_path/Frameworks",
 				);
+				MACH_O_TYPE = staticlib;
 				PRODUCT_BUNDLE_IDENTIFIER = com.dumbass.Standard;
 				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
 				SKIP_INSTALL = YES;
@@ -841,6 +880,7 @@
 					"@executable_path/Frameworks",
 					"@loader_path/Frameworks",
 				);
+				MACH_O_TYPE = staticlib;
 				PRODUCT_BUNDLE_IDENTIFIER = com.dumbass.Standard;
 				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
 				SKIP_INSTALL = YES;

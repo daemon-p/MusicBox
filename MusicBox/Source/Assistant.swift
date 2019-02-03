@@ -18,10 +18,11 @@ let AssistiveControl: UIWindow = {
 }()
 
 public func AssistantSetup() {
+    try? Assistent.audioPlayer.setup()
     _ = AssistiveControl
 }
 
 public enum Assistent {
-    public static let audioPlayer: AudioPlaayer = try! .init()
+    public static let audioPlayer: AudioPlayer = .init()
 }
 

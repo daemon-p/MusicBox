@@ -1,3 +1,4 @@
 #!/bin/sh
 
-xcodebuild -project MusicBox.xcodeproj -scheme MusicBox build -allowProvisioningUpdates
+xcodebuild -workspace MusicBox.xcworkspace -scheme MusicBox build
+

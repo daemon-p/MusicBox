@@ -8,6 +8,9 @@
       location = "group:MusicBox/MusicBox.xcodeproj">
    </FileRef>
    <FileRef
+      location = "group:PhotoBrowser/PhotoBrowser.xcodeproj">
+   </FileRef>
+   <FileRef
       location = "group:MusicBox/../Utils/Utils.xcodeproj">
    </FileRef>
 </Workspace>
