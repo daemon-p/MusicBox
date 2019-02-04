@@ -20,6 +20,7 @@
 		9111628821FB550500B7CAE9 /* BeautiesProvider.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9111628721FB550500B7CAE9 /* BeautiesProvider.swift */; };
 		9111628A21FB560700B7CAE9 /* Utils.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9111628921FB560700B7CAE9 /* Utils.swift */; };
 		9111628F21FB5E9900B7CAE9 /* Standard.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9111628E21FB5E9900B7CAE9 /* Standard.framework */; };
+		914ADD9C2206C2DC00F0212D /* BrowserEntity.swift in Sources */ = {isa = PBXBuildFile; fileRef = 914ADD9B2206C2DC00F0212D /* BrowserEntity.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -49,6 +50,7 @@
 		9111628721FB550500B7CAE9 /* BeautiesProvider.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BeautiesProvider.swift; sourceTree = "<group>"; };
 		9111628921FB560700B7CAE9 /* Utils.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Utils.swift; sourceTree = "<group>"; };
 		9111628E21FB5E9900B7CAE9 /* Standard.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = Standard.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		914ADD9B2206C2DC00F0212D /* BrowserEntity.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BrowserEntity.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -114,12 +116,13 @@
 		9111627621FB4F5600B7CAE9 /* Source */ = {
 			isa = PBXGroup;
 			children = (
-				9111627721FB4F5600B7CAE9 /* BrowserInteractor.swift */,
 				9111628921FB560700B7CAE9 /* Utils.swift */,
 				9111627821FB4F5600B7CAE9 /* BrowserCell.swift */,
 				9111627921FB4F5600B7CAE9 /* BrowserViewController.swift */,
+				9111627721FB4F5600B7CAE9 /* BrowserInteractor.swift */,
 				9111627A21FB4F5600B7CAE9 /* BrowserPresenter.swift */,
 				9111628721FB550500B7CAE9 /* BeautiesProvider.swift */,
+				914ADD9B2206C2DC00F0212D /* BrowserEntity.swift */,
 			);
 			path = Source;
 			sourceTree = "<group>";
@@ -256,6 +259,7 @@
 				9111628121FB4F5700B7CAE9 /* BrowserPresenter.swift in Sources */,
 				9111628021FB4F5700B7CAE9 /* BrowserViewController.swift in Sources */,
 				9111628821FB550500B7CAE9 /* BeautiesProvider.swift in Sources */,
+				914ADD9C2206C2DC00F0212D /* BrowserEntity.swift in Sources */,
 				9111627E21FB4F5700B7CAE9 /* BrowserInteractor.swift in Sources */,
 				9111628A21FB560700B7CAE9 /* Utils.swift in Sources */,
 			);

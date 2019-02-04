@@ -6,4 +6,10 @@
 //  Copyright © 2019 dumbass. All rights reserved.
 //
 
-import Foundation
+protocol BrowserPresenterProtocol: AnyObject {
+    
+}
+
+class BrowserPresenter: BrowserPresenterProtocol {
+    
+}

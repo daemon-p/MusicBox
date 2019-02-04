@@ -8,11 +8,11 @@
 
 import UIKit
 
-protocol ReusableIdentifire: class {
+public protocol ReusableIdentifire: class {
     static var reuseIdentifier: String { get }
 }
 
-extension ReusableIdentifire {
+public extension ReusableIdentifire {
     static var reuseIdentifier: String {
         return String(describing: type(of: self))
     }
@@ -21,14 +21,14 @@ extension ReusableIdentifire {
 extension UICollectionViewCell: ReusableIdentifire {
 }
 
-extension UICollectionView {
+public extension UICollectionView {
     
     func register<T: ReusableIdentifire>(_ cellClass: T.Type) {
         register(cellClass, forCellWithReuseIdentifier: T.reuseIdentifier)
     }
 }
 
-extension UICollectionView {
+public extension UICollectionView {
     
     func dequeue<T>(_: T.Type, for indexPath: IndexPath) -> T where T: UICollectionViewCell {
         return dequeueReusableCell(withReuseIdentifier: T.reuseIdentifier, for: indexPath) as! T

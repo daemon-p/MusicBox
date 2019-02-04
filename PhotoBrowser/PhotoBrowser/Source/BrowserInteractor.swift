@@ -7,9 +7,23 @@
 //
 
 protocol BrowserInteractorProtocol: AnyObject {
+    func loadBeauties()
+}
+
+class BrowserInteractor {
     
+    private let engine: BeautiesEngine
+    private let presenter: BrowserPresenterProtocol
+    
+    init(engine: BeautiesEngine = .default, presenter: BrowserPresenterProtocol) {
+        self.engine = engine
+        self.presenter = presenter
+    }
 }
 
-class BrowserInteracto: BrowserInteractorProtocol {
+extension BrowserInteractor: BrowserInteractorProtocol {
+    
+    func loadBeauties() {
+        
+    }
 }
-
