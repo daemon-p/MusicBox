@@ -5,7 +5,9 @@ extension UIView {
     @IBInspectable
     var shadowColor: UIColor? {
         get { return layer.shadowColor.flatMap(UIColor.init) }
-        set { layer.shadowColor = newValue?.cgColor }
+        set {
+            layer.shadowColor = newValue?.cgColor
+        }
     }
     
     @IBInspectable
@@ -34,14 +36,22 @@ extension UIView {
     
     @IBInspectable
     var borderColor: UIColor? {
-        get { return layer.borderColor.flatMap(UIColor.init) }
-        set { layer.borderColor = newValue?.cgColor }
+        get {
+            return layer.borderColor.flatMap(UIColor.init)
+            
+        }
+        set {
+            layer.borderColor = newValue?.cgColor
+            
+        }
     }
     
     @IBInspectable
     var borderWidth: CGFloat {
         get { return layer.borderWidth }
-        set { layer.borderWidth = newValue }
+        set {
+            layer.borderWidth = newValue
+        }
     }
 }
 

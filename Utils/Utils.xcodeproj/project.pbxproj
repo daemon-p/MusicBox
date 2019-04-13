@@ -27,6 +27,12 @@
 		913BEB3E21B6BF83005FF1BB /* StandardTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 913BEB3D21B6BF83005FF1BB /* StandardTests.swift */; };
 		913BEB5021B6BFB7005FF1BB /* Standard.h in Headers */ = {isa = PBXBuildFile; fileRef = 913BEB4E21B6BFB7005FF1BB /* Standard.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		913BEB5221B6BFCA005FF1BB /* Operators.swift in Sources */ = {isa = PBXBuildFile; fileRef = 913BEA6221B6B6BD005FF1BB /* Operators.swift */; };
+		914ADDA02207E23000F0212D /* Processor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 914ADD9E2207E23000F0212D /* Processor.swift */; };
+		914ADDA12207E23000F0212D /* ImageProcessor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 914ADD9F2207E23000F0212D /* ImageProcessor.swift */; };
+		914ADDA32208414600F0212D /* joker.gif in Resources */ = {isa = PBXBuildFile; fileRef = 914ADDA22208414600F0212D /* joker.gif */; };
+		916AF4F02217EA8F00BFC059 /* Parser.swift in Sources */ = {isa = PBXBuildFile; fileRef = 916AF4EF2217EA8F00BFC059 /* Parser.swift */; };
+		916AF4F222182A5400BFC059 /* ParserTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 916AF4F122182A5400BFC059 /* ParserTests.swift */; };
+		916AF4F522193D6500BFC059 /* Curry.swift in Sources */ = {isa = PBXBuildFile; fileRef = 916AF4F422193D6500BFC059 /* Curry.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -76,6 +82,12 @@
 		913BEB3F21B6BF83005FF1BB /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		913BEB4E21B6BFB7005FF1BB /* Standard.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Standard.h; sourceTree = "<group>"; };
 		913BEB4F21B6BFB7005FF1BB /* Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		914ADD9E2207E23000F0212D /* Processor.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Processor.swift; sourceTree = "<group>"; };
+		914ADD9F2207E23000F0212D /* ImageProcessor.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ImageProcessor.swift; sourceTree = "<group>"; };
+		914ADDA22208414600F0212D /* joker.gif */ = {isa = PBXFileReference; lastKnownFileType = image.gif; path = joker.gif; sourceTree = "<group>"; };
+		916AF4EF2217EA8F00BFC059 /* Parser.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Parser.swift; sourceTree = "<group>"; };
+		916AF4F122182A5400BFC059 /* ParserTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ParserTests.swift; sourceTree = "<group>"; };
+		916AF4F422193D6500BFC059 /* Curry.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Curry.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -168,6 +180,7 @@
 			children = (
 				911C243E21B80C7900F96CA4 /* MusicBoxTest.xib */,
 				911C244821B971D700F96CA4 /* Nib_MusicBoxTest.xib */,
+				914ADDA22208414600F0212D /* joker.gif */,
 				911C244421B812E800F96CA4 /* MusicBoxTestView2.xib */,
 				911C244021B80C8E00F96CA4 /* MusicBoxTest.storyboard */,
 			);
@@ -258,6 +271,7 @@
 			children = (
 				913BEB3F21B6BF83005FF1BB /* Info.plist */,
 				913BEB3D21B6BF83005FF1BB /* StandardTests.swift */,
+				916AF4F122182A5400BFC059 /* ParserTests.swift */,
 			);
 			path = StandardTests;
 			sourceTree = "<group>";
@@ -283,6 +297,7 @@
 		913BEB5321B6C0C7005FF1BB /* Source */ = {
 			isa = PBXGroup;
 			children = (
+				914ADD9D2207DEE700F0212D /* vImage */,
 				9111624A21FB4D5F00B7CAE9 /* Reusable */,
 				913BEA6E21B6B960005FF1BB /* InterfaceBuilding */,
 			);
@@ -300,10 +315,37 @@
 		913BEB5521B6C0E8005FF1BB /* Source */ = {
 			isa = PBXGroup;
 			children = (
+				916AF4F322193D5700BFC059 /* Curring */,
+				916AF4EE2217EA7700BFC059 /* Parser */,
 				9111628B21FB56CF00B7CAE9 /* Sequence */,
 				913BEA6121B6B69F005FF1BB /* Operators */,
 			);
 			path = Source;
+			sourceTree = "<group>";
+		};
+		914ADD9D2207DEE700F0212D /* vImage */ = {
+			isa = PBXGroup;
+			children = (
+				914ADD9F2207E23000F0212D /* ImageProcessor.swift */,
+				914ADD9E2207E23000F0212D /* Processor.swift */,
+			);
+			path = vImage;
+			sourceTree = "<group>";
+		};
+		916AF4EE2217EA7700BFC059 /* Parser */ = {
+			isa = PBXGroup;
+			children = (
+				916AF4EF2217EA8F00BFC059 /* Parser.swift */,
+			);
+			path = Parser;
+			sourceTree = "<group>";
+		};
+		916AF4F322193D5700BFC059 /* Curring */ = {
+			isa = PBXGroup;
+			children = (
+				916AF4F422193D6500BFC059 /* Curry.swift */,
+			);
+			path = Curring;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -480,6 +522,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				911C244521B812E800F96CA4 /* MusicBoxTestView2.xib in Resources */,
+				914ADDA32208414600F0212D /* joker.gif in Resources */,
 				911C244121B80C8E00F96CA4 /* MusicBoxTest.storyboard in Resources */,
 				911C243F21B80C7900F96CA4 /* MusicBoxTest.xib in Resources */,
 			);
@@ -530,9 +573,11 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				914ADDA02207E23000F0212D /* Processor.swift in Sources */,
 				913BEB0721B6BF26005FF1BB /* UIView+InterfaceBuilding.swift in Sources */,
 				9111624C21FB4D8200B7CAE9 /* ReusableKit.swift in Sources */,
 				913BEB0821B6BF26005FF1BB /* StoryboardRepresentable.swift in Sources */,
+				914ADDA12207E23000F0212D /* ImageProcessor.swift in Sources */,
 				911C241621B8050600F96CA4 /* Identifierable.swift in Sources */,
 				911C241421B804C700F96CA4 /* NibRepresentable.swift in Sources */,
 			);
@@ -552,6 +597,8 @@
 			files = (
 				9111628D21FB56E900B7CAE9 /* Repetition.swift in Sources */,
 				913BEB5221B6BFCA005FF1BB /* Operators.swift in Sources */,
+				916AF4F02217EA8F00BFC059 /* Parser.swift in Sources */,
+				916AF4F522193D6500BFC059 /* Curry.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -559,6 +606,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				916AF4F222182A5400BFC059 /* ParserTests.swift in Sources */,
 				913BEB3E21B6BF83005FF1BB /* StandardTests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

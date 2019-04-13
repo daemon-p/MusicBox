@@ -15,14 +15,8 @@
 		911C23DE21B6CC5000F96CA4 /* HostUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 911C23DD21B6CC5000F96CA4 /* HostUITests.swift */; };
 		911C240621B6CE9F00F96CA4 /* Main.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 911C23F821B6CCF500F96CA4 /* Main.xcassets */; };
 		911C240B21B6D7A200F96CA4 /* Toca Toca.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 911C23F721B6CCC400F96CA4 /* Toca Toca.mp3 */; };
-		91DBDDBD21C630EC00DF6A75 /* MusicBox.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 91DBDDBC21C630EC00DF6A75 /* MusicBox.framework */; };
-		91DBDDBE21C630EC00DF6A75 /* MusicBox.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 91DBDDBC21C630EC00DF6A75 /* MusicBox.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
-		91DBDDC021C630EC00DF6A75 /* MBUIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 91DBDDBF21C630EC00DF6A75 /* MBUIKit.framework */; };
-		91DBDDC121C630EC00DF6A75 /* MBUIKit.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 91DBDDBF21C630EC00DF6A75 /* MBUIKit.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
-		91DBDDC321C630EC00DF6A75 /* MBFoundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 91DBDDC221C630EC00DF6A75 /* MBFoundation.framework */; };
-		91DBDDC421C630EC00DF6A75 /* MBFoundation.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 91DBDDC221C630EC00DF6A75 /* MBFoundation.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
-		91DBDDC621C630EC00DF6A75 /* Standard.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 91DBDDC521C630EC00DF6A75 /* Standard.framework */; };
-		91DBDDC721C630EC00DF6A75 /* Standard.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 91DBDDC521C630EC00DF6A75 /* Standard.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		91EBB6CC22621BF200C494D9 /* MusicBox.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 91EBB6CB22621BF200C494D9 /* MusicBox.framework */; };
+		91EBB6D022621CE900C494D9 /* Standard.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 91EBB6CF22621CE900C494D9 /* Standard.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -49,10 +43,6 @@
 			dstPath = "";
 			dstSubfolderSpec = 10;
 			files = (
-				91DBDDC121C630EC00DF6A75 /* MBUIKit.framework in Embed Frameworks */,
-				91DBDDBE21C630EC00DF6A75 /* MusicBox.framework in Embed Frameworks */,
-				91DBDDC421C630EC00DF6A75 /* MBFoundation.framework in Embed Frameworks */,
-				91DBDDC721C630EC00DF6A75 /* Standard.framework in Embed Frameworks */,
 			);
 			name = "Embed Frameworks";
 			runOnlyForDeploymentPostprocessing = 0;
@@ -74,10 +64,9 @@
 		911C23DF21B6CC5000F96CA4 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		911C23F721B6CCC400F96CA4 /* Toca Toca.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = "Toca Toca.mp3"; sourceTree = "<group>"; };
 		911C23F821B6CCF500F96CA4 /* Main.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Main.xcassets; sourceTree = "<group>"; };
-		91DBDDBC21C630EC00DF6A75 /* MusicBox.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = MusicBox.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		91DBDDBF21C630EC00DF6A75 /* MBUIKit.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = MBUIKit.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		91DBDDC221C630EC00DF6A75 /* MBFoundation.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = MBFoundation.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		91DBDDC521C630EC00DF6A75 /* Standard.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = Standard.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		91EBB6CB22621BF200C494D9 /* MusicBox.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = MusicBox.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		91EBB6CD22621BFA00C494D9 /* Standard.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = Standard.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		91EBB6CF22621CE900C494D9 /* Standard.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = Standard.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -85,10 +74,8 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				91DBDDC021C630EC00DF6A75 /* MBUIKit.framework in Frameworks */,
-				91DBDDBD21C630EC00DF6A75 /* MusicBox.framework in Frameworks */,
-				91DBDDC321C630EC00DF6A75 /* MBFoundation.framework in Frameworks */,
-				91DBDDC621C630EC00DF6A75 /* Standard.framework in Frameworks */,
+				91EBB6D022621CE900C494D9 /* Standard.framework in Frameworks */,
+				91EBB6CC22621BF200C494D9 /* MusicBox.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -112,10 +99,6 @@
 		911C23B121B6CC4E00F96CA4 = {
 			isa = PBXGroup;
 			children = (
-				91DBDDC521C630EC00DF6A75 /* Standard.framework */,
-				91DBDDC221C630EC00DF6A75 /* MBFoundation.framework */,
-				91DBDDBF21C630EC00DF6A75 /* MBUIKit.framework */,
-				91DBDDBC21C630EC00DF6A75 /* MusicBox.framework */,
 				911C23BC21B6CC4E00F96CA4 /* Host */,
 				911C23D121B6CC5000F96CA4 /* HostTests */,
 				911C23DC21B6CC5000F96CA4 /* HostUITests */,
@@ -138,12 +121,12 @@
 			isa = PBXGroup;
 			children = (
 				911C23BD21B6CC4E00F96CA4 /* AppDelegate.swift */,
+				911C23BF21B6CC4E00F96CA4 /* ViewController.swift */,
 				911C23C921B6CC5000F96CA4 /* Info.plist */,
 				911C23C621B6CC5000F96CA4 /* LaunchScreen.storyboard */,
 				911C23C121B6CC4E00F96CA4 /* Main.storyboard */,
 				911C23F821B6CCF500F96CA4 /* Main.xcassets */,
 				911C23F721B6CCC400F96CA4 /* Toca Toca.mp3 */,
-				911C23BF21B6CC4E00F96CA4 /* ViewController.swift */,
 			);
 			path = Host;
 			sourceTree = "<group>";
@@ -169,6 +152,9 @@
 		91DBDDB721C6309500DF6A75 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				91EBB6CF22621CE900C494D9 /* Standard.framework */,
+				91EBB6CD22621BFA00C494D9 /* Standard.framework */,
+				91EBB6CB22621BF200C494D9 /* MusicBox.framework */,
 			);
 			name = Frameworks;
 			sourceTree = "<group>";
@@ -561,6 +547,7 @@
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 8PJZBHFZQF;
 				INFOPLIST_FILE = HostUITests/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
@@ -580,6 +567,7 @@
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 8PJZBHFZQF;
 				INFOPLIST_FILE = HostUITests/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",

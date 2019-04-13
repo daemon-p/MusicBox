@@ -13,4 +13,7 @@
    <FileRef
       location = "group:MusicBox/../Utils/Utils.xcodeproj">
    </FileRef>
+   <FileRef
+      location = "group:../Sticker/Sticker.xcodeproj">
+   </FileRef>
 </Workspace>

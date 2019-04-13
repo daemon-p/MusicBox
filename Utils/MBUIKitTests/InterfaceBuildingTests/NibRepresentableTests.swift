@@ -31,7 +31,7 @@ class NibRepresentableTests: XCTestCase {
     func testNibIntance() {
 //        XCTAssertNotNil(MusicBoxTestView0.nibInstance())
         XCTAssertNotNil(MusicBoxTestView1.nibInstance())
-        MusicBoxTestView1.nibInstance()?.label
+//        MusicBoxTestView1.nibInstance()?.label
 
         XCTAssertNotNil(MusicBoxTestView2.nibInstance())
     }
