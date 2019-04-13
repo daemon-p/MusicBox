@@ -109,43 +109,10 @@
                         <rect key="frame" x="0.0" y="20" width="375" height="44"/>
                         <autoresizingMask key="autoresizingMask"/>
                     </navigationBar>
-                    <connections>
-                        <segue destination="km9-kl-tgc" kind="relationship" relationship="rootViewController" id="0Ku-Cd-mWG"/>
-                    </connections>
                 </navigationController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Hn9-GR-7Y3" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="-994" y="560"/>
-        </scene>
-        <!--Sec View Controller-->
-        <scene sceneID="XVq-Cy-mA7">
-            <objects>
-                <viewController id="km9-kl-tgc" customClass="SecViewController" customModule="Host" customModuleProvider="target" sceneMemberID="viewController">
-                    <view key="view" contentMode="scaleToFill" id="geq-hA-4Zf">
-                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
-                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <subviews>
-                            <imageView userInteractionEnabled="NO" contentMode="center" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="hba-qF-bU8">
-                                <rect key="frame" x="0.0" y="64" width="375" height="554"/>
-                            </imageView>
-                        </subviews>
-                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                        <constraints>
-                            <constraint firstItem="hba-qF-bU8" firstAttribute="top" secondItem="5Hg-zF-PSb" secondAttribute="top" id="HRS-Xo-5dL"/>
-                            <constraint firstItem="5Hg-zF-PSb" firstAttribute="trailing" secondItem="hba-qF-bU8" secondAttribute="trailing" id="LS2-LV-Fvc"/>
-                            <constraint firstItem="5Hg-zF-PSb" firstAttribute="bottom" secondItem="hba-qF-bU8" secondAttribute="bottom" id="TZL-RW-Uan"/>
-                            <constraint firstItem="hba-qF-bU8" firstAttribute="leading" secondItem="5Hg-zF-PSb" secondAttribute="leading" id="xuP-MZ-HBi"/>
-                        </constraints>
-                        <viewLayoutGuide key="safeArea" id="5Hg-zF-PSb"/>
-                    </view>
-                    <navigationItem key="navigationItem" id="VFa-ZG-Bz3"/>
-                    <connections>
-                        <outlet property="imageView" destination="hba-qF-bU8" id="8nq-zb-EVY"/>
-                    </connections>
-                </viewController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="f36-zn-Uap" userLabel="First Responder" sceneMemberID="firstResponder"/>
-            </objects>
-            <point key="canvasLocation" x="-269" y="575"/>
         </scene>
     </scenes>
     <resources>

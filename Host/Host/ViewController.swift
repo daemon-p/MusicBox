@@ -25,10 +25,4 @@ class SecViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
     }
-    
-    override func touchesBegan(_ touches: Set<UITouch>, with event: UIEvent?) {
-//        imageView.kf.setImage(with: _DataPrvider.init(url: URL(fileURLWithPath: "/Users/Dumbass/Desktop/d209ed59b47d159f2f6703e41113c0cd.gif")), options: [.forceRefresh])
-//        let image = UIImage.animatedImageNamed("", duration: "T##TimeInterval")
-
-    }
 }
