@@ -8,7 +8,7 @@
 
 import MBUIKit
 
-class BrowserNavigationController: UINavigationController {
+public class BrowserNavigationController: UINavigationController {
 }
 
 class BrowserViewController: UICollectionViewController {

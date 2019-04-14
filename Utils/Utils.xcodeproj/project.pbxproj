@@ -67,7 +67,7 @@
 		911C244421B812E800F96CA4 /* MusicBoxTestView2.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = MusicBoxTestView2.xib; sourceTree = "<group>"; };
 		911C244821B971D700F96CA4 /* Nib_MusicBoxTest.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = Nib_MusicBoxTest.xib; sourceTree = "<group>"; };
 		913BEA6221B6B6BD005FF1BB /* Operators.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Operators.swift; sourceTree = "<group>"; };
-		913BEA6621B6B6F4005FF1BB /* UIView+InterfaceBuilding.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UIView+InterfaceBuilding.swift"; sourceTree = "<group>"; };
+		913BEA6621B6B6F4005FF1BB /* UIView+InterfaceBuilding.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = "UIView+InterfaceBuilding.swift"; path = "../../../../MusicBox/Source/UIView+InterfaceBuilding.swift"; sourceTree = "<group>"; };
 		913BEA6A21B6B720005FF1BB /* Observer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Observer.swift; sourceTree = "<group>"; };
 		913BEA7121B6B9CF005FF1BB /* StoryboardRepresentable.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StoryboardRepresentable.swift; sourceTree = "<group>"; };
 		913BEAE721B6BEB1005FF1BB /* MBUIKit.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = MBUIKit.framework; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -480,18 +480,22 @@
 				TargetAttributes = {
 					911C242E21B80BA300F96CA4 = {
 						CreatedOnToolsVersion = 10.1;
+						LastSwiftMigration = 1020;
 					};
 					913BEAE621B6BEB1005FF1BB = {
 						CreatedOnToolsVersion = 10.1;
+						LastSwiftMigration = 1020;
 					};
 					913BEB0D21B6BF3B005FF1BB = {
 						CreatedOnToolsVersion = 10.1;
 					};
 					913BEB2F21B6BF83005FF1BB = {
 						CreatedOnToolsVersion = 10.1;
+						LastSwiftMigration = 1020;
 					};
 					913BEB3721B6BF83005FF1BB = {
 						CreatedOnToolsVersion = 10.1;
+						LastSwiftMigration = 1020;
 					};
 				};
 			};
@@ -501,6 +505,7 @@
 			hasScannedForEncodings = 0;
 			knownRegions = (
 				en,
+				Base,
 			);
 			mainGroup = 913BEA0E21B6B552005FF1BB;
 			productRefGroup = 913BEA1921B6B552005FF1BB /* Products */;
@@ -639,7 +644,7 @@
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = com.dumbass.MBUIKitTests;
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_VERSION = 4.2;
+				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
 			name = Debug;
@@ -656,7 +661,7 @@
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = com.dumbass.MBUIKitTests;
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_VERSION = 4.2;
+				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
 			name = Release;
@@ -805,7 +810,7 @@
 				PRODUCT_BUNDLE_IDENTIFIER = com.dumbass.MBUIKit;
 				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
 				SKIP_INSTALL = YES;
-				SWIFT_VERSION = 4.2;
+				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
 			name = Debug;
@@ -832,7 +837,7 @@
 				PRODUCT_BUNDLE_IDENTIFIER = com.dumbass.MBUIKit;
 				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
 				SKIP_INSTALL = YES;
-				SWIFT_VERSION = 4.2;
+				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
 			name = Release;
@@ -907,7 +912,7 @@
 				PRODUCT_BUNDLE_IDENTIFIER = com.dumbass.Standard;
 				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
 				SKIP_INSTALL = YES;
-				SWIFT_VERSION = 4.2;
+				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
 			name = Debug;
@@ -932,7 +937,7 @@
 				PRODUCT_BUNDLE_IDENTIFIER = com.dumbass.Standard;
 				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
 				SKIP_INSTALL = YES;
-				SWIFT_VERSION = 4.2;
+				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
 			name = Release;
@@ -950,7 +955,7 @@
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = com.dumbass.StandardTests;
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_VERSION = 4.2;
+				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
 			name = Debug;
@@ -968,7 +973,7 @@
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = com.dumbass.StandardTests;
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_VERSION = 4.2;
+				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
 			name = Release;

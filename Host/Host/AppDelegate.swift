@@ -8,6 +8,7 @@
 
 import UIKit
 import MusicBox
+import MBUIKit
 
 @UIApplicationMain
 class AppDelegate: UIResponder, UIApplicationDelegate {

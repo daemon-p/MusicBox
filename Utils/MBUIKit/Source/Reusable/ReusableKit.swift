@@ -35,3 +35,9 @@ public extension UICollectionView {
     }
 }
 
+public extension UITableView {
+    func dequeue<T>(_: T.Type, for indexPath: IndexPath) -> T where T: UITableViewCell {
+        return dequeueReusableCell(withIdentifier: T.identifier, for: indexPath) as! T
+    }
+}
+

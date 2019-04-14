@@ -53,21 +53,45 @@
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                         <subviews>
-                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="LaunchImg" translatesAutoresizingMaskIntoConstraints="NO" id="vHw-VR-IPt">
-                                <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="LaunchImg" translatesAutoresizingMaskIntoConstraints="NO" id="vHw-VR-IPt">
+                                <rect key="frame" x="0.0" y="64" width="375" height="554"/>
                             </imageView>
-                            <visualEffectView opaque="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="5TM-5Q-0Ra">
+                            <visualEffectView opaque="NO" contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="5TM-5Q-0Ra">
                                 <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
-                                <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO" id="8x9-PB-Dj3">
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" ambiguous="YES" insetsLayoutMarginsFromSafeArea="NO" id="8x9-PB-Dj3">
                                     <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                                     <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                                     <subviews>
-                                        <visualEffectView opaque="NO" contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="b4s-J8-BaH">
+                                        <visualEffectView opaque="NO" contentMode="scaleAspectFit" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="b4s-J8-BaH">
                                             <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                                             <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                                             <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" ambiguous="YES" insetsLayoutMarginsFromSafeArea="NO" id="BPr-pd-Ack">
                                                 <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                                                 <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                                                <userDefinedRuntimeAttributes>
+                                                    <userDefinedRuntimeAttribute type="color" keyPath="shadowColor">
+                                                        <color key="value" red="1" green="0.17172412989999999" blue="0.95309621830000002" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                    </userDefinedRuntimeAttribute>
+                                                    <userDefinedRuntimeAttribute type="size" keyPath="shadowOffset">
+                                                        <size key="value" width="0.0" height="0.0"/>
+                                                    </userDefinedRuntimeAttribute>
+                                                    <userDefinedRuntimeAttribute type="number" keyPath="shadowRadius">
+                                                        <real key="value" value="10"/>
+                                                    </userDefinedRuntimeAttribute>
+                                                    <userDefinedRuntimeAttribute type="number" keyPath="shadowOpacity">
+                                                        <real key="value" value="1"/>
+                                                    </userDefinedRuntimeAttribute>
+                                                    <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                                        <real key="value" value="40"/>
+                                                    </userDefinedRuntimeAttribute>
+                                                    <userDefinedRuntimeAttribute type="color" keyPath="borderColor">
+                                                        <color key="value" cocoaTouchSystemColor="scrollViewTexturedBackgroundColor"/>
+                                                    </userDefinedRuntimeAttribute>
+                                                    <userDefinedRuntimeAttribute type="number" keyPath="borderWidth">
+                                                        <real key="value" value="5"/>
+                                                    </userDefinedRuntimeAttribute>
+                                                </userDefinedRuntimeAttributes>
                                             </view>
                                             <vibrancyEffect>
                                                 <blurEffect style="dark"/>
@@ -82,14 +106,10 @@
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <constraints>
-                            <constraint firstItem="5TM-5Q-0Ra" firstAttribute="top" secondItem="vHw-VR-IPt" secondAttribute="top" id="1Yu-Qp-OWD"/>
-                            <constraint firstItem="vHw-VR-IPt" firstAttribute="leading" secondItem="24t-4R-D0k" secondAttribute="leading" id="2Yc-Fy-ajk"/>
-                            <constraint firstAttribute="bottom" secondItem="vHw-VR-IPt" secondAttribute="bottom" id="5OD-xQ-ylI"/>
-                            <constraint firstItem="vHw-VR-IPt" firstAttribute="top" secondItem="MG2-UW-KMM" secondAttribute="top" id="7qi-Cp-Qb0"/>
-                            <constraint firstItem="5TM-5Q-0Ra" firstAttribute="trailing" secondItem="vHw-VR-IPt" secondAttribute="trailing" id="Ikx-yh-aqc"/>
-                            <constraint firstItem="5TM-5Q-0Ra" firstAttribute="bottom" secondItem="vHw-VR-IPt" secondAttribute="bottom" id="X3y-AP-InN"/>
-                            <constraint firstItem="vHw-VR-IPt" firstAttribute="trailing" secondItem="24t-4R-D0k" secondAttribute="trailing" id="wqN-39-Xg6"/>
-                            <constraint firstItem="5TM-5Q-0Ra" firstAttribute="leading" secondItem="vHw-VR-IPt" secondAttribute="leading" id="wwE-c4-2dm"/>
+                            <constraint firstItem="vHw-VR-IPt" firstAttribute="trailing" secondItem="24t-4R-D0k" secondAttribute="trailing" id="ZEz-LS-GK0"/>
+                            <constraint firstItem="vHw-VR-IPt" firstAttribute="top" secondItem="24t-4R-D0k" secondAttribute="top" id="eiS-Qx-uiy"/>
+                            <constraint firstItem="24t-4R-D0k" firstAttribute="bottom" secondItem="vHw-VR-IPt" secondAttribute="bottom" id="iTv-ef-J1s"/>
+                            <constraint firstItem="vHw-VR-IPt" firstAttribute="leading" secondItem="24t-4R-D0k" secondAttribute="leading" id="kf2-Wn-cZE"/>
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="24t-4R-D0k"/>
                     </view>
@@ -109,10 +129,29 @@
                         <rect key="frame" x="0.0" y="20" width="375" height="44"/>
                         <autoresizingMask key="autoresizingMask"/>
                     </navigationBar>
+                    <connections>
+                        <segue destination="YeG-8g-jpk" kind="relationship" relationship="rootViewController" id="Ini-tP-Y6D"/>
+                    </connections>
                 </navigationController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Hn9-GR-7Y3" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-994" y="560"/>
+            <point key="canvasLocation" x="-1250" y="610"/>
+        </scene>
+        <!--Compress View Controller-->
+        <scene sceneID="lPK-n2-s8r">
+            <objects>
+                <viewController id="YeG-8g-jpk" customClass="CompressViewController" customModule="Host" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="CWf-pE-sTb">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <viewLayoutGuide key="safeArea" id="OLA-xc-XDj"/>
+                    </view>
+                    <navigationItem key="navigationItem" id="EbB-XA-T7M"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="AO0-tz-nIX" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-537" y="681"/>
         </scene>
     </scenes>
     <resources>

@@ -7,16 +7,21 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		9112DE3722623AEC00138E26 /* MBUIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9112DE3622623AEC00138E26 /* MBUIKit.framework */; };
+		9112DE3D2262DD7B00138E26 /* MusicViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9112DE3C2262DD7B00138E26 /* MusicViewController.swift */; };
+		9112DE6322631F5600138E26 /* Standard.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9112DE6222631F5600138E26 /* Standard.framework */; };
 		911C240821B6CEDC00F96CA4 /* Shared.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 911C240721B6CEDC00F96CA4 /* Shared.xcassets */; };
 		911C240A21B6D16F00F96CA4 /* Assistant.swift in Sources */ = {isa = PBXBuildFile; fileRef = 911C240921B6D16F00F96CA4 /* Assistant.swift */; };
 		913BEA5621B6B62B005FF1BB /* MusicBox.h in Headers */ = {isa = PBXBuildFile; fileRef = 913BEA4821B6B62A005FF1BB /* MusicBox.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		913BEA6521B6B6E6005FF1BB /* AssistantViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 913BEA6421B6B6E6005FF1BB /* AssistantViewController.swift */; };
 		913BEA6921B6B6FB005FF1BB /* AudioPlayer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 913BEA6821B6B6FB005FF1BB /* AudioPlayer.swift */; };
 		913BEA6D21B6B75B005FF1BB /* Player.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 913BEA6C21B6B75B005FF1BB /* Player.storyboard */; };
-		91DBDDCA21C630FC00DF6A75 /* MBUIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 91DBDDC921C630FC00DF6A75 /* MBUIKit.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		9112DE3622623AEC00138E26 /* MBUIKit.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = MBUIKit.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		9112DE3C2262DD7B00138E26 /* MusicViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MusicViewController.swift; sourceTree = "<group>"; };
+		9112DE6222631F5600138E26 /* Standard.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = Standard.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		911C240721B6CEDC00F96CA4 /* Shared.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Shared.xcassets; sourceTree = "<group>"; };
 		911C240921B6D16F00F96CA4 /* Assistant.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Assistant.swift; sourceTree = "<group>"; };
 		913BEA4521B6B62A005FF1BB /* MusicBox.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = MusicBox.framework; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -33,7 +38,8 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				91DBDDCA21C630FC00DF6A75 /* MBUIKit.framework in Frameworks */,
+				9112DE6322631F5600138E26 /* Standard.framework in Frameworks */,
+				9112DE3722623AEC00138E26 /* MBUIKit.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -62,6 +68,7 @@
 			isa = PBXGroup;
 			children = (
 				911C240921B6D16F00F96CA4 /* Assistant.swift */,
+				9112DE3C2262DD7B00138E26 /* MusicViewController.swift */,
 				913BEA6421B6B6E6005FF1BB /* AssistantViewController.swift */,
 				913BEA6821B6B6FB005FF1BB /* AudioPlayer.swift */,
 				913BEA6C21B6B75B005FF1BB /* Player.storyboard */,
@@ -82,6 +89,8 @@
 		913BEB5A21B6C876005FF1BB /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				9112DE6222631F5600138E26 /* Standard.framework */,
+				9112DE3622623AEC00138E26 /* MBUIKit.framework */,
 				91DBDDC921C630FC00DF6A75 /* MBUIKit.framework */,
 			);
 			name = Frameworks;
@@ -131,6 +140,7 @@
 				TargetAttributes = {
 					913BEA4421B6B62A005FF1BB = {
 						CreatedOnToolsVersion = 10.1;
+						LastSwiftMigration = 1020;
 					};
 				};
 			};
@@ -140,6 +150,7 @@
 			hasScannedForEncodings = 0;
 			knownRegions = (
 				en,
+				Base,
 			);
 			mainGroup = 913BEA3B21B6B62A005FF1BB;
 			productRefGroup = 913BEA4621B6B62A005FF1BB /* Products */;
@@ -168,6 +179,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				9112DE3D2262DD7B00138E26 /* MusicViewController.swift in Sources */,
 				913BEA6521B6B6E6005FF1BB /* AssistantViewController.swift in Sources */,
 				913BEA6921B6B6FB005FF1BB /* AudioPlayer.swift in Sources */,
 				911C240A21B6D16F00F96CA4 /* Assistant.swift in Sources */,
@@ -319,7 +331,7 @@
 				PRODUCT_BUNDLE_IDENTIFIER = com.dumbass.Audio;
 				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
 				SKIP_INSTALL = YES;
-				SWIFT_VERSION = 4.2;
+				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
 			name = Debug;
@@ -344,7 +356,7 @@
 				PRODUCT_BUNDLE_IDENTIFIER = com.dumbass.Audio;
 				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
 				SKIP_INSTALL = YES;
-				SWIFT_VERSION = 4.2;
+				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
 			name = Release;

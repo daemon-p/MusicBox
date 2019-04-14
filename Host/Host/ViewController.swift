@@ -7,6 +7,7 @@
 //
 
 import MusicBox
+import PhotoBrowser
 
 class ViewController: UIViewController {
 
@@ -17,12 +18,13 @@ class ViewController: UIViewController {
     }
 }
 
-
-class SecViewController: UIViewController {
-    
-    @IBOutlet weak var imageView: UIImageView!
-    
+class CompressViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
+        
+    }
+    
+    override func touchesBegan(_ touches: Set<UITouch>, with event: UIEvent?) {
+        navigationController?.pushViewController(PhotoBrowser.entrance, animated: true)
     }
 }

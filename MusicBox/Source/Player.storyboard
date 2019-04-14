@@ -1,11 +1,11 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14460.31" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="NHl-lH-kKV">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14490.70" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="UKh-83-OFz">
     <device id="retina4_7" orientation="portrait">
         <adaptation id="fullscreen"/>
     </device>
     <dependencies>
         <deployment identifier="iOS"/>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14460.20"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14490.49"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
@@ -67,10 +67,89 @@
                     </connections>
                 </panGestureRecognizer>
             </objects>
-            <point key="canvasLocation" x="1053.5999999999999" y="20.239880059970016"/>
+            <point key="canvasLocation" x="998" y="0.0"/>
+        </scene>
+        <!--Item-->
+        <scene sceneID="0ZV-VU-R9y">
+            <objects>
+                <viewController storyboardIdentifier="MusicViewController" id="UKh-83-OFz" customClass="MusicViewController" customModule="MusicBox" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="GbI-QS-XRb">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                        <subviews>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="LaunchImg" translatesAutoresizingMaskIntoConstraints="NO" id="noh-Ry-86s">
+                                <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                            </imageView>
+                            <visualEffectView opaque="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="WL1-rE-IRZ">
+                                <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                                <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO" id="2Hl-Rc-aIW">
+                                    <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                                    <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                                    <subviews>
+                                        <visualEffectView opaque="NO" contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="QFq-7Y-eYz">
+                                            <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                                            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                                            <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" ambiguous="YES" insetsLayoutMarginsFromSafeArea="NO" id="zSP-6c-Q6K">
+                                                <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                                                <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                                                <userDefinedRuntimeAttributes>
+                                                    <userDefinedRuntimeAttribute type="color" keyPath="shadowColor">
+                                                        <color key="value" red="1" green="0.17172412989999999" blue="0.95309621830000002" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                    </userDefinedRuntimeAttribute>
+                                                    <userDefinedRuntimeAttribute type="size" keyPath="shadowOffset">
+                                                        <size key="value" width="0.0" height="0.0"/>
+                                                    </userDefinedRuntimeAttribute>
+                                                    <userDefinedRuntimeAttribute type="number" keyPath="shadowRadius">
+                                                        <real key="value" value="10"/>
+                                                    </userDefinedRuntimeAttribute>
+                                                    <userDefinedRuntimeAttribute type="number" keyPath="shadowOpacity">
+                                                        <real key="value" value="1"/>
+                                                    </userDefinedRuntimeAttribute>
+                                                    <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                                        <real key="value" value="40"/>
+                                                    </userDefinedRuntimeAttribute>
+                                                    <userDefinedRuntimeAttribute type="color" keyPath="borderColor">
+                                                        <color key="value" cocoaTouchSystemColor="scrollViewTexturedBackgroundColor"/>
+                                                    </userDefinedRuntimeAttribute>
+                                                    <userDefinedRuntimeAttribute type="number" keyPath="borderWidth">
+                                                        <real key="value" value="5"/>
+                                                    </userDefinedRuntimeAttribute>
+                                                </userDefinedRuntimeAttributes>
+                                            </view>
+                                            <vibrancyEffect>
+                                                <blurEffect style="dark"/>
+                                            </vibrancyEffect>
+                                        </visualEffectView>
+                                    </subviews>
+                                </view>
+                                <vibrancyEffect>
+                                    <blurEffect style="light"/>
+                                </vibrancyEffect>
+                            </visualEffectView>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="noh-Ry-86s" firstAttribute="top" secondItem="GbI-QS-XRb" secondAttribute="top" id="1sd-hR-gON"/>
+                            <constraint firstItem="WL1-rE-IRZ" firstAttribute="bottom" secondItem="noh-Ry-86s" secondAttribute="bottom" id="8KD-l4-Bqa"/>
+                            <constraint firstItem="WL1-rE-IRZ" firstAttribute="trailing" secondItem="noh-Ry-86s" secondAttribute="trailing" id="D7f-GS-mP4"/>
+                            <constraint firstItem="WL1-rE-IRZ" firstAttribute="top" secondItem="noh-Ry-86s" secondAttribute="top" id="Euv-bI-q0b"/>
+                            <constraint firstItem="WL1-rE-IRZ" firstAttribute="leading" secondItem="noh-Ry-86s" secondAttribute="leading" id="UA3-Ia-ZgR"/>
+                            <constraint firstItem="noh-Ry-86s" firstAttribute="leading" secondItem="ipz-mG-lze" secondAttribute="leading" id="oOg-q3-yHU"/>
+                            <constraint firstItem="noh-Ry-86s" firstAttribute="trailing" secondItem="ipz-mG-lze" secondAttribute="trailing" id="oSV-jg-hMe"/>
+                            <constraint firstAttribute="bottom" secondItem="noh-Ry-86s" secondAttribute="bottom" id="uYm-o1-cHh"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="ipz-mG-lze"/>
+                    </view>
+                    <tabBarItem key="tabBarItem" title="Item" id="r3P-Pp-qfU"/>
+                    <navigationItem key="navigationItem" id="0fF-rE-HO9"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="yv0-RR-TEl" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="182" y="-10"/>
         </scene>
     </scenes>
     <resources>
+        <image name="LaunchImg" width="600" height="1629.5"/>
         <image name="assistant" width="60" height="60"/>
     </resources>
 </document>

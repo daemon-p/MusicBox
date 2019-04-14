@@ -143,9 +143,10 @@ extension AssistantViewController {
             switch type {
             case .began: Assistent.audioPlayer.pause()
             case .ended: Assistent.audioPlayer.play()
+            @unknown default: fatalError()
             }
         case AudioPlayer.playerStateDidChangedNotification:
-            guard let newValue = notification.userInfo?["oldValue"] as? AudioPlayer.State else {
+            guard let newValue = notification.userInfo?["newValue"] as? AudioPlayer.State else {
                 return
             }
             newValue.isPlaying ? startAnimation() : pauseAnimation()

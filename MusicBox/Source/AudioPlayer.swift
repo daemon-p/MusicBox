@@ -135,11 +135,11 @@ extension AudioPlayer {
 
 extension AudioPlayer: AVAudioPlayerDelegate {
     
-    private func audioPlayerDidFinishPlaying(_ pl: AVAudioPlayer, successfully flag: Bool) {
+    public func audioPlayerDidFinishPlaying(_ pl: AVAudioPlayer, successfully flag: Bool) {
         state = .stopped
     }
     
-    private func audioPlayerDecodeErrorDidOccur(_ player: AVAudioPlayer, error: Error?) {
+    public func audioPlayerDecodeErrorDidOccur(_ player: AVAudioPlayer, error: Error?) {
         state = .none
     }
 }

@@ -7,6 +7,10 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		9112DE6422631F7C00138E26 /* PhotoBrowser.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9112DE5822631CB500138E26 /* PhotoBrowser.framework */; };
+		9112DE6522631F7C00138E26 /* PhotoBrowser.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 9112DE5822631CB500138E26 /* PhotoBrowser.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		9112DE6622631F9000138E26 /* MusicBox.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9112DE5A22631ED900138E26 /* MusicBox.framework */; };
+		9112DE6722631F9000138E26 /* MusicBox.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 9112DE5A22631ED900138E26 /* MusicBox.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 		911C23BE21B6CC4E00F96CA4 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 911C23BD21B6CC4E00F96CA4 /* AppDelegate.swift */; };
 		911C23C021B6CC4E00F96CA4 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 911C23BF21B6CC4E00F96CA4 /* ViewController.swift */; };
 		911C23C321B6CC4E00F96CA4 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 911C23C121B6CC4E00F96CA4 /* Main.storyboard */; };
@@ -15,8 +19,6 @@
 		911C23DE21B6CC5000F96CA4 /* HostUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 911C23DD21B6CC5000F96CA4 /* HostUITests.swift */; };
 		911C240621B6CE9F00F96CA4 /* Main.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 911C23F821B6CCF500F96CA4 /* Main.xcassets */; };
 		911C240B21B6D7A200F96CA4 /* Toca Toca.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 911C23F721B6CCC400F96CA4 /* Toca Toca.mp3 */; };
-		91EBB6CC22621BF200C494D9 /* MusicBox.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 91EBB6CB22621BF200C494D9 /* MusicBox.framework */; };
-		91EBB6D022621CE900C494D9 /* Standard.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 91EBB6CF22621CE900C494D9 /* Standard.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -43,6 +45,8 @@
 			dstPath = "";
 			dstSubfolderSpec = 10;
 			files = (
+				9112DE6722631F9000138E26 /* MusicBox.framework in Embed Frameworks */,
+				9112DE6522631F7C00138E26 /* PhotoBrowser.framework in Embed Frameworks */,
 			);
 			name = "Embed Frameworks";
 			runOnlyForDeploymentPostprocessing = 0;
@@ -50,6 +54,10 @@
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
+		9112DE3822623CBE00138E26 /* MBUIKit.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = MBUIKit.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		9112DE5822631CB500138E26 /* PhotoBrowser.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = PhotoBrowser.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		9112DE5A22631ED900138E26 /* MusicBox.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = MusicBox.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		9112DE6022631F2E00138E26 /* PhotoBrowser.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = PhotoBrowser.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		911C23BA21B6CC4E00F96CA4 /* Host.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Host.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		911C23BD21B6CC4E00F96CA4 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		911C23BF21B6CC4E00F96CA4 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -74,8 +82,8 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				91EBB6D022621CE900C494D9 /* Standard.framework in Frameworks */,
-				91EBB6CC22621BF200C494D9 /* MusicBox.framework in Frameworks */,
+				9112DE6622631F9000138E26 /* MusicBox.framework in Frameworks */,
+				9112DE6422631F7C00138E26 /* PhotoBrowser.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -96,6 +104,24 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		9112DE3A2262405200138E26 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				911C23C921B6CC5000F96CA4 /* Info.plist */,
+				911C23C621B6CC5000F96CA4 /* LaunchScreen.storyboard */,
+			);
+			path = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		9112DE3B2262415300138E26 /* Resource */ = {
+			isa = PBXGroup;
+			children = (
+				911C23F821B6CCF500F96CA4 /* Main.xcassets */,
+				911C23F721B6CCC400F96CA4 /* Toca Toca.mp3 */,
+			);
+			path = Resource;
+			sourceTree = "<group>";
+		};
 		911C23B121B6CC4E00F96CA4 = {
 			isa = PBXGroup;
 			children = (
@@ -122,11 +148,9 @@
 			children = (
 				911C23BD21B6CC4E00F96CA4 /* AppDelegate.swift */,
 				911C23BF21B6CC4E00F96CA4 /* ViewController.swift */,
-				911C23C921B6CC5000F96CA4 /* Info.plist */,
-				911C23C621B6CC5000F96CA4 /* LaunchScreen.storyboard */,
 				911C23C121B6CC4E00F96CA4 /* Main.storyboard */,
-				911C23F821B6CCF500F96CA4 /* Main.xcassets */,
-				911C23F721B6CCC400F96CA4 /* Toca Toca.mp3 */,
+				9112DE3B2262415300138E26 /* Resource */,
+				9112DE3A2262405200138E26 /* Supporting Files */,
 			);
 			path = Host;
 			sourceTree = "<group>";
@@ -152,6 +176,10 @@
 		91DBDDB721C6309500DF6A75 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				9112DE6022631F2E00138E26 /* PhotoBrowser.framework */,
+				9112DE5A22631ED900138E26 /* MusicBox.framework */,
+				9112DE5822631CB500138E26 /* PhotoBrowser.framework */,
+				9112DE3822623CBE00138E26 /* MBUIKit.framework */,
 				91EBB6CF22621CE900C494D9 /* Standard.framework */,
 				91EBB6CD22621BFA00C494D9 /* Standard.framework */,
 				91EBB6CB22621BF200C494D9 /* MusicBox.framework */,
@@ -228,13 +256,21 @@
 				TargetAttributes = {
 					911C23B921B6CC4E00F96CA4 = {
 						CreatedOnToolsVersion = 10.1;
+						LastSwiftMigration = 1020;
+						SystemCapabilities = {
+							com.apple.BackgroundModes = {
+								enabled = 1;
+							};
+						};
 					};
 					911C23CD21B6CC5000F96CA4 = {
 						CreatedOnToolsVersion = 10.1;
+						LastSwiftMigration = 1020;
 						TestTargetID = 911C23B921B6CC4E00F96CA4;
 					};
 					911C23D821B6CC5000F96CA4 = {
 						CreatedOnToolsVersion = 10.1;
+						LastSwiftMigration = 1020;
 						TestTargetID = 911C23B921B6CC4E00F96CA4;
 					};
 				};
@@ -472,14 +508,14 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 8PJZBHFZQF;
-				INFOPLIST_FILE = Host/Info.plist;
+				INFOPLIST_FILE = "$(SRCROOT)/Host/Supporting Files/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = com.dumbass.Host;
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_VERSION = 4.2;
+				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
 			name = Debug;
@@ -490,14 +526,14 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 8PJZBHFZQF;
-				INFOPLIST_FILE = Host/Info.plist;
+				INFOPLIST_FILE = "$(SRCROOT)/Host/Supporting Files/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = com.dumbass.Host;
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_VERSION = 4.2;
+				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
 			name = Release;
@@ -516,7 +552,7 @@
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = com.dumbass.HostTests;
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_VERSION = 4.2;
+				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Host.app/Host";
 			};
@@ -536,7 +572,7 @@
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = com.dumbass.HostTests;
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_VERSION = 4.2;
+				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Host.app/Host";
 			};
@@ -556,7 +592,7 @@
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = com.dumbass.HostUITests;
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_VERSION = 4.2;
+				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 				TEST_TARGET_NAME = Host;
 			};
@@ -576,7 +612,7 @@
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = com.dumbass.HostUITests;
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_VERSION = 4.2;
+				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 				TEST_TARGET_NAME = Host;
 			};
